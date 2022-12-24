@@ -1,0 +1,7 @@
+build/*
+out/*
+out/build/*
+bin*
+a.out
+bin
+bin/*
