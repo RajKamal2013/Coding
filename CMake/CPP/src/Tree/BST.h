@@ -1,3 +1,7 @@
+
+#ifndef BST_H_   
+#define BST_H_ 
+
 #include <iostream>
 using namespace std;
 /* 
@@ -24,10 +28,12 @@ public:
   int min();
   int max();
   BST& remove(int val);
-  void inorder(ostream &out = cout);
+  void inorder(ostream &out=cout);
 
   private: 
     BST* findMin(BST *node);
     BST* findMax(BST *node);
     void Inorder(BST *node, ostream &out);
 };
+
+#endif

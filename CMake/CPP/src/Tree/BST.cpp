@@ -1,4 +1,5 @@
 #include "BST.h"
+#include "debug.h"
 #include <iostream>
 #include <exception>
 

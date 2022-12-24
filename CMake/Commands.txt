@@ -1,9 +1,14 @@
 Links 
 https://gitlab.com/CLIUtils/modern-cmake/tree/master/examples/extended-project
-https://gitlab.com/CLIUtils/modern-cmake/-/tree/master/examples/extended-project
-https://cliutils.gitlab.io/modern-cmake/chapters/basics/example.html
 
+
+
+CMake Examples 
 https://cmake.org/examples
+https://cliutils.gitlab.io/modern-cmake/chapters/basics/example.html
+https://gitlab.com/CLIUtils/modern-cmake/-/tree/master/examples/extended-project
+
+CMake Documentation and Wiki 
 https://gitlab.kitware.com/cmake/community/-/wikis/Home#cmake
 
 
@@ -14,3 +19,14 @@ cmake --build build
 Clang commands 
 clang++ -std=c++11 src/Tree/BST.cpp src/Tree/main.cpp -o bin/testTree && ./bin/testTree
 clang++ -std=c++11 src/Tree/BST.cpp src/Tree/main.cpp -o testTree && ./testTree
+
+
+Setting C++ 11 
+https://crascit.com/2015/03/28/enabling-cxx11-in-cmake/
+
+Pick between GNU and LLVM 
+https://stackoverflow.com/questions/10851247/how-do-i-activate-c-11-in-cmake
+
+Compiling with Clang 
+https://www.appsloveworld.com/cplus/100/9/error-non-aggregate-type-vectorint-cannot-be-initialized-with-an-initializer
+
