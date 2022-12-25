@@ -113,7 +113,7 @@ BST& BST:: remove(int val) {
         }
     }
    // delete tmp;
-    return *this;
+    return *tmp;
 }
 
 void BST :: Inorder(BST *node, ostream &out) {

@@ -1,14 +1,10 @@
 #include<iostream>
-#include "testBST.h"
-#include "FindClosestValue.h"
-#include "validateBST.h"
+#include "BSTTest.h"
 using namespace std;
 
 int main() {
     cout << "Hello Coding, We are practicing Binary Tree!!" << endl;
-    //testBST();
-    //test_ClosestValueInBst();
-    test_validateBST();
+    testBST();
     return 0;
 }
 
