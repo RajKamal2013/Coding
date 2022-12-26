@@ -11,11 +11,10 @@ void testBST() {
     cout << "Inorder" << endl;
     btree->inorder();
     BST &temp = btree->remove(5);
-    BST *t1 = &temp;
-    if (t1 != nullptr) {
+    if (&temp != nullptr) {
+        //delete &temp;
         cout << "Removed data:" << temp.value << endl;
     }
-    delete &temp;
 
 /*
     if (btree == nullptr) {
@@ -25,6 +24,7 @@ void testBST() {
         btree->inorder();
     }
 */
+
 
     BST *root = new BST(10);
     vector<int> list = {5, 3, 8, 12, 11, 15, 13, 14, 22, 25};

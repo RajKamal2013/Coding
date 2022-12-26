@@ -32,3 +32,6 @@ https://stackoverflow.com/questions/10851247/how-do-i-activate-c-11-in-cmake
 Compiling with Clang 
 https://www.appsloveworld.com/cplus/100/9/error-non-aggregate-type-vectorint-cannot-be-initialized-with-an-initializer
 
+
+Clang commands 
+clang++ -std=c++11 src/Tree/BST.cpp src/Tree/SameBSTsTest.cpp -o bin/testTree && ./bin/testTree

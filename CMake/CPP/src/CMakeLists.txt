@@ -26,5 +26,27 @@ add_executable(MinHeightBST
               Tree/MinHeightBSTTest.cpp
               )
 
+add_executable(KthLargestValue
+               Tree/BST.h Tree/BST.cpp
+               Tree/KthLargestValueInBST.h
+               Tree/KthLargestValueInBSTTest.cpp
+            )
+add_executable(ReconstructBST
+                Tree/BST.h Tree/BST.cpp
+                Tree/ReconstructBST.h 
+                Tree/ReconstructBSTTest.cpp
+                )     
+                
+add_executable(SameBST
+                Tree/BST.h Tree/BST.cpp
+                Tree/SameBSTs.h 
+                Tree/SameBSTsTest.cpp
+                )  
+add_executable(BranchSum
+                Tree/BST.h Tree/BST.cpp
+                Tree/BranchSum.h 
+                Tree/BranchSumTest.cpp
+              )                  
+
 target_compile_features(srcMain PUBLIC cxx_std_11)
 

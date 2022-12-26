@@ -29,6 +29,7 @@ public:
   int max();
   BST& remove(int val);
   void inorder(ostream &out=cout);
+  ~BST();
 
   private: 
     BST* findMin(BST *node);

@@ -1,3 +1,13 @@
 clang++ -std=c++11 src/Tree/BST.cpp src/Tree/main.cpp -o testTree && ./testTree
 cmake -S . -B build
 cmake --build build
+
+
+Cmake commands
+cmake -S . -B build
+cmake --build build
+
+Clang commands 
+clang++ -std=c++11 src/Tree/BST.cpp src/Tree/main.cpp -o bin/testTree && ./bin/testTree
+clang++ -std=c++11 src/Tree/BST.cpp src/Tree/main.cpp -o testTree && ./testTree
+clang++ -std=c++11 src/Tree/main.cpp -o bin/testTree && ./bin/testTree

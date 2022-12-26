@@ -128,3 +128,12 @@ void BST:: inorder(ostream &out) {
     Inorder(this, out);
     out << endl;
 }
+
+BST :: ~BST() {
+   BST *curr = this;
+   while(curr != nullptr) {
+    BST &tmp = remove(this->value);
+    delete &tmp;
+    curr = this;
+   }
+}
