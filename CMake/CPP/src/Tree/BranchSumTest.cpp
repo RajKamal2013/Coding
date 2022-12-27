@@ -25,3 +25,7 @@ int main() {
     test_BranchSum();
     return 0;
 }
+
+/* 
+ * clang++ -std=c++11 src/Tree/BST.cpp src/Tree/BranchSumTest.cpp -o bin/testTree && ./bin/testTree
+ */

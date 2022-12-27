@@ -46,7 +46,23 @@ add_executable(BranchSum
                 Tree/BST.h Tree/BST.cpp
                 Tree/BranchSum.h 
                 Tree/BranchSumTest.cpp
-              )                  
+              )
+add_executable(NodeDepth
+               Tree/BST.h Tree/BST.cpp
+               Tree/NodeDepth.h 
+               Tree/NodeDepthTest.cpp
+              )
+add_executable(InvertBinaryTree
+              Tree/BinaryTree.h Tree/BinaryTree.cpp 
+              Tree/InvertBinaryTree.h 
+              Tree/InvertBinaryTreeTest.cpp 
+              )
+add_executable(BinaryTreeDiamter
+              Tree/BinaryTree.h Tree/BinaryTree.cpp 
+              Tree/Diameter.h 
+              Tree/DiameterTest.cpp 
+              )
+     
 
 target_compile_features(srcMain PUBLIC cxx_std_11)
 
