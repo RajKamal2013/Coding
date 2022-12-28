@@ -597,3 +597,10 @@ https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
 2. queue
 3. priority_queue
 
+
+----------------------------------------- 
+Algorithms 
+
+max()
+cout << max(num1, num2);
+

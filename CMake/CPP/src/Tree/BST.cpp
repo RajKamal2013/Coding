@@ -137,3 +137,27 @@ BST :: ~BST() {
     curr = this;
    }
 }
+
+int BST :: heightBalancedBST_int(BST *tree, bool &isBalanced) {
+    if (isBalanced == false) {
+      return 0;
+    }
+    if (tree == nullptr) {
+      return 0;
+    }
+    int ltHeight, rtHeight;
+    ltHeight = rtHeight = 0;
+    ltHeight = heightBalancedBST_int(tree->left, isBalanced);
+    rtHeight = heightBalancedBST_int(tree->right, isBalanced);
+    if (abs(ltHeight - rtHeight) > 1) {
+      //cout << "Balanced failed:" << tree->value << endl;
+      isBalanced = false;
+    }
+    return (ltHeight > rtHeight) ? (ltHeight + 1) : (rtHeight + 1);
+}
+
+bool BST::heightBalancedBST() {
+  bool isBalanced = true;
+  (void)heightBalancedBST_int(this, isBalanced);
+  return isBalanced;
+}

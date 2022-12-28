@@ -31,3 +31,7 @@ int binaryTreeDiameter(BinaryTree *tree) {
     (void)height(tree, diameter);
     return diameter;
 }
+
+/* command 
+ clang++ -g -std=c++11 src/Tree/BinaryTree.cpp src/Tree/DiameterTest.cpp -o bin/testTree && ./bin/testTree
+*/

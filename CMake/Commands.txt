@@ -35,3 +35,4 @@ https://www.appsloveworld.com/cplus/100/9/error-non-aggregate-type-vectorint-can
 
 Clang commands 
 clang++ -std=c++11 src/Tree/BST.cpp src/Tree/SameBSTsTest.cpp -o bin/testTree && ./bin/testTree
+
