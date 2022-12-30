@@ -4,4 +4,8 @@ add_executable (DPMain
 add_executable(DPMaxSubSequenceSumNonAdjacent
                MaxSubSequenceNonAdjacent.h 
                MaxSubSequenceNonAdjacentTest.cpp)
+
+add_executable(CoinDenominations
+               CoinDenominations.h 
+               CoinDenominationsTest.cpp)
                

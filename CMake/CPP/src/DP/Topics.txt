@@ -18,7 +18,7 @@ Cormen
   
 [Educative.io](http://Educative.io)  
 	- Largest Sum SubArray. —>  
-	- Maximum Subsequence - > Non Adjacent  
+	- Maximum Subsequence -> Non Adjacent  
 	- Find a Combination of Game scoring  
 	- Coin Change  
 	- Minimum Coin Change  

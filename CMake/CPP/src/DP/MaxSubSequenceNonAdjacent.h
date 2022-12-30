@@ -52,3 +52,8 @@ int maxSubsetSumNoAdjacent(vector<int> array) {
   return sumArray[sumArray.size() - 1];
 }
 
+
+/* 
+ * Command to run 
+ * clang++ -g -std=c++11 src/DP/MaxSubSequenceNonAdjacentTest.cpp  -o bin/testDP && ./bin/testDP
+ */
