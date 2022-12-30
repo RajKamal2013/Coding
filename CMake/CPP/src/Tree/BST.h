@@ -1,3 +1,7 @@
+
+#ifndef BST_H_   
+#define BST_H_ 
+
 #include <iostream>
 using namespace std;
 /* 
@@ -24,10 +28,15 @@ public:
   int min();
   int max();
   BST& remove(int val);
-  void inorder(ostream &out = cout);
+  void inorder(ostream &out=cout);
+  bool heightBalancedBST();
+  ~BST();
 
   private: 
     BST* findMin(BST *node);
     BST* findMax(BST *node);
     void Inorder(BST *node, ostream &out);
+    int heightBalancedBST_int(BST *tree, bool &isBalanced);
 };
+
+#endif

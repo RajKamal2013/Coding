@@ -5,3 +5,4 @@ bin*
 a.out
 bin
 bin/*
+cmake/*
