@@ -1,8 +1,8 @@
 build/*
 out/*
 out/build/*
-bin*
+bin/*
 a.out
-bin
+bin/*
 bin/*
 cmake/*
