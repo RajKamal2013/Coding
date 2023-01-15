@@ -31,6 +31,74 @@ for(vector<int>::iterator   it = vec_of_num.begin();
         cout<<*it<<", ";
     }
 
+Copy a vector in another vector 
+
+Copy Constructor 
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v(vec);
+        return v;
+    }
+
+Range Constructor 
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v(vec.begin(), vec.end());
+        return v;
+    }
+
+using vector = 
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v;
+        v = vec;
+    
+        return v;
+    }
+
+
+using copy method 
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v(vec.size());
+        std::copy(vec.begin(), vec.end(), v.begin());
+        return v;
+    }
+
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v;
+        std::copy(vec.begin(), vec.end(), back_inserter(v));
+        return v;
+    }
+
+Using Insert function 
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v;
+        v.insert(v.begin(), vec.begin(), vec.end());
+    
+        return v;
+    }
+
+Using Assign 
+    template<typename T>
+    std::vector<T> create_copy(std::vector<T> const &vec)
+    {
+        std::vector<T> v;
+        v.assign(vec.begin(), vec.end());
+    
+        return v;
+    }
+
+
+
 
 -----------------------------------------queue ---------------------------------
 #include <queue>
@@ -571,6 +639,8 @@ power ->
 
 ---------------------------------------------------------------
 18. Strings
+length includes null character. 
+
 
   std::size_t found = str.find(str2);
   if (found!=std::string::npos)
@@ -601,6 +671,16 @@ https://www.geeksforgeeks.org/the-c-standard-template-library-stl/
 ----------------------------------------- 
 Algorithms 
 
+#include<algorithm>
 max()
 cout << max(num1, num2);
+min
 
+--------------- Array -----------------------
+std::vector<std::vector<int> > fog(
+    ROW_COUNT,
+    std::vector<int>(COLUMN_COUNT, 4))
+
+    std::vector<std::vector<int> > fog(
+        ROW_COUNT,
+        std::vector<int>(COLUMN_COUNT))

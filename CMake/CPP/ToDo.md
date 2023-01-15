@@ -1,6 +1,13 @@
 
 # Coding Plannings 
 
+# Things To Follow
+1. Be in Zone while coding 
+2. Every day 2-3 Problem 
+3. Keep Revising Important once in mind 
+
+
+
 ## Binary Tree 
     1. Find Closest Value in BST  --> Done 
     2. Construction of BST   --> Done 
@@ -76,37 +83,60 @@
     1. Coin Change 
     2. Minimum Number of Coins to make change 
     
-
-
 ### 30th Dec 2022
     Dynamic Programming 
     1. Levenshtein Distance 
+    
+### 7th Jan 2022
     2. Maximum Increasing subsequence 
     3. Lowest Common Subsequence
-    4. Min Number of Jump
-    5. Number of Ways to Traverse a graph 
+    4. Number of Ways to Traverse a graph 
+    5. Min Number of Jump
+
+### 8th Jan 2022
     6. Knapsack 
     7. Water Area 
     8. Game Scoring 
-    9. Subset Sum Problem 
+
+### 9th Jan 20222
+    9.  Subset Sum Problem 
     10. Unbounded knapsack 
-   
-## Graph
-    1. 
-### 30th Dec 2022
+
+## Graph + Recurssion 
+### 10th Jan 
     1. Graph Construction 
     2. Algorithm Revise
     
-### 31st Dec 2022
-    1. Graph: 7 Problem
+### 11th Jan 
+    1. Graph: 2 Problem
+
+### 12th Jan 
+    Graph: 2 problem
+
+### 13th Jan 
+    Graph: 2 problem 
+
+## String 
+### 14th Jan 
+    String: Revise and Coding basic Algorithm 
+
+### 15 Jan 
+    String: 2 problem 
+
 
 ## Graph + DP + List 
-### 1st Jan 2023
-    Graph -> 1  + DP (Complete)-> 2 + List -> 2 
 
 
-2nd Jan 2023 + 3rd + 4th + 5th Jan + 6th 
-    Graph + Recursions + String Algorithm Revise 
+
+Graph: 10th Jan - 15th Jan 
+String: 16th Jan - 23rd Jan 
+Greedy: 24th Jan - 8th Jan 
+Heaps: 29th Jan - 31st Jan 
+Sorting and Searching: 1st Feb - 9th Feb
+Stack: 9th Feb - 12th Feb 
+Queue: 12th Feb - 13th Feb
+Array: 14th Feb - 19th Feb 
+
 
 7th Jan  - 13th Jan 2022 
     Strings 
