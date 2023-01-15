@@ -17,8 +17,12 @@ add_executable(NumberOfWaysToTraverseGrid
                NumberOfWaysToTraverse.h 
                NumberOfWaysToTraverseTest.cpp
                )  
-               
+
 add_executable(MaximumIncreasingSubSequence
                MaxIncreasingSubsequence.h 
                MaxIncreasingSubsequenceTest.cpp 
-              )                            
+              )   
+add_executable(LCS
+               LCS.h
+               LCSTest.cpp
+               )       

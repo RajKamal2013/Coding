@@ -229,7 +229,7 @@ vector<vector<int>> maxSumIncreasingSubsequence2(vector<int> array) {
 
     vector<int> arr;
     arr.push_back(maxSumIdx);
-    idx = maxSumIdx;
+    int idx = maxSumIdx;
     while (trace[idx] != -1) {
         arr.push_back(array[trace[idx]]);
         idx = trace[idx];
