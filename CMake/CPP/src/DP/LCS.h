@@ -1,3 +1,11 @@
+
+/* 
+ * Find longest common subsequence of two strings. 
+ *  str1 = "clement";
+ *  str2 = "antoine"; 
+ *  Answer = n, t
+ * issues: Duplicate issue (needs to track)
+ */
 #include <iostream>
 #include <vector>
 #include <string>
@@ -17,15 +25,39 @@ vector<char> longestCommonSubsequence(string str1, string str2) {
   for (int i = 1; i < n; i++) {
     for (int j = 1; j < m; j++) {
         if (str1[i-1] == str2[j-1]) {
+            bool alreadyFound = false;
             if (i == j){
                 L[i][j]  = L[i-1][j-1] + 1;
                 C[i][j] = 'D';
             } else if (i < j) {
-                L[i][j] = L[i-1][j] + 1;
-                C[i][j] = 'U';
+                for (int z = i-2; z >= 0; z--) {
+                    if (str1[z] == str2[j-1]) {
+                        alreadyFound = true;
+                        break;
+                    }
+                }
+                if (alreadyFound) {
+                    L[i][j] = L[i-1][j];
+                    C[i][j] = 'U';
+                } else {
+                    L[i][j] = L[i-1][j] + 1;
+                    C[i][j] = 'U';
+                }
+                
             } else {
-                L[i][j] = L[i][j-1] + 1;
-                C[i][j] = 'L';
+                for (int z = j -2; z >= 0; z--) {
+                    if (str1[i-1] == str2[z]) {
+                        alreadyFound = true;
+                        break;
+                    }
+                }
+                if (alreadyFound) {
+                    L[i][j] = L[i][j-1];
+                    C[i][j] = 'L';
+                } else {
+                    L[i][j] = L[i][j-1] + 1;
+                    C[i][j] = 'L';
+                }
             }
         } else {
             L[i][j] = L[i-1][j-1];

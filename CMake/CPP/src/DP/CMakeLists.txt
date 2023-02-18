@@ -25,4 +25,11 @@ add_executable(MaximumIncreasingSubSequence
 add_executable(LCS
                LCS.h
                LCSTest.cpp
-               )       
+               )
+add_executable(MinNumberOfJumps
+               MinNumberOfJumps.h 
+               MinNumberOfJumpsTest.cpp 
+               )
+add_executable(MaxWaterArea
+               MaxWaterArea.h 
+               MaxWaterAreaTest.cpp)   
