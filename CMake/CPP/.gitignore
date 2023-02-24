@@ -6,3 +6,17 @@ a.out
 bin/*
 bin/*
 cmake/*
+bazel-CPP
+bazel-bin
+bazel-out
+autoMake
+autom4te.cache/
+bazel-testlogs
+*.in
+Makefile.in
+Makefile
+*.a
+*.o
+../../Courses/
+../../libs/
+
