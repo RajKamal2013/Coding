@@ -17,8 +17,19 @@ add_executable(NumberOfWaysToTraverseGrid
                NumberOfWaysToTraverse.h 
                NumberOfWaysToTraverseTest.cpp
                )  
-               
+
 add_executable(MaximumIncreasingSubSequence
                MaxIncreasingSubsequence.h 
                MaxIncreasingSubsequenceTest.cpp 
-              )                            
+              )   
+add_executable(LCS
+               LCS.h
+               LCSTest.cpp
+               )
+add_executable(MinNumberOfJumps
+               MinNumberOfJumps.h 
+               MinNumberOfJumpsTest.cpp 
+               )
+add_executable(MaxWaterArea
+               MaxWaterArea.h 
+               MaxWaterAreaTest.cpp)   

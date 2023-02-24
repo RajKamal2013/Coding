@@ -684,3 +684,5 @@ std::vector<std::vector<int> > fog(
     std::vector<std::vector<int> > fog(
         ROW_COUNT,
         std::vector<int>(COLUMN_COUNT))
+
+

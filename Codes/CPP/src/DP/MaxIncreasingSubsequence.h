@@ -1,3 +1,9 @@
+/* 
+ * Maximum Increasing subsequence: 
+ * arr = {10, 70, 20, 30, 50, 11, 30};
+ * Answer : [110, [10, 20, 30, 50]]" 
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -229,7 +235,7 @@ vector<vector<int>> maxSumIncreasingSubsequence2(vector<int> array) {
 
     vector<int> arr;
     arr.push_back(maxSumIdx);
-    idx = maxSumIdx;
+    int idx = maxSumIdx;
     while (trace[idx] != -1) {
         arr.push_back(array[trace[idx]]);
         idx = trace[idx];
