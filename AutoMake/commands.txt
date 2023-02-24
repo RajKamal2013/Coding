@@ -1,2 +1,23 @@
 https://github.com/byuksel/Automake-Autoconf-Template-Project
 
+## Install 
+brew install autoconf automake libtool
+
+aclocal
+autoconf
+automake --add-missing
+
+./configure
+make
+
+Link Makefile 
+https://riptutorial.com/cplusplus/example/8518/compiling-with-gnu-make
+https://riptutorial.com/cplusplus/example/8518/compiling-with-gnu-make
+https://earthly.dev/blog/make-flags/
+
+Automake
+https://elinux.org/images/4/43/Petazzoni.pdf
+https://coin-or-tools.github.io/BuildTools/automake-intro.html
+https://web.mit.edu/gnu/doc/html/automake.html
+http://www.bioinf.uni-freiburg.de/~mmann/HowTo/automake.html
+
