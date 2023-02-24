@@ -15,6 +15,6 @@ AC_SUBST([CC])
 # These are the same locations as your Makefile.in's, but named as Makefile only
 # We need to do this because both Autoconf and Automake read this file and
 # produce Makefiles from this list.
-AC_CONFIG_FILES([Makefile src/Makefile])
+AC_CONFIG_FILES([Makefile src/Makefile src/DP/Makefile])
 # Finally produce "configure" script
 AC_OUTPUT
