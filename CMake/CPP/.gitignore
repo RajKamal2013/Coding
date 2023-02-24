@@ -22,4 +22,4 @@ configure
 install-sh
 missing
 m4/
-
+depcomp
