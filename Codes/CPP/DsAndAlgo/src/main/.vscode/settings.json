@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.log": "python, C++, Java, Bash,",
+        "__node_handle": "cpp",
+        "iostream": "cpp"
+    }
+}

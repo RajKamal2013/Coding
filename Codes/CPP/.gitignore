@@ -23,3 +23,6 @@ install-sh
 missing
 m4/
 depcomp
+DsAndAlgo/bld/
+DsAndAlgo/build/
+bld/
