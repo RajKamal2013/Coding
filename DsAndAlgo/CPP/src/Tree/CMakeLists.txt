@@ -56,9 +56,10 @@ add_executable(SameBST
                 )
 
 add_executable(BranchSum
-                BST.h BST.cpp
-                BranchSum.h 
-                BranchSumTest.cpp
+               debug.h
+               BST.h BST.cpp
+               BranchSum.h 
+               BranchSumTest.cpp
               )
 
 add_executable(NodeDepth

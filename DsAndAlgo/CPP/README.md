@@ -24,7 +24,7 @@ cd bld/src/Tree/
 
 
 # CMake 
-## Compilinga and Building
+## Compiling and Building
 ```
 cmake -S . -B build
 cmake --build build 
@@ -34,4 +34,14 @@ cmake --build build
 ```
 cd build/src/DP/
 cd build/src/Tree/
+```
+
+
+# Bazel
+
+## Compiling and Building
+```
+bazel build //src/DP:DPMain
+bazel build //src/DP:DPMaxSubSequenceSumNonAdjacent
+bazel build //src/DP:LevenshteinDistance
 ```
