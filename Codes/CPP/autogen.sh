@@ -12,4 +12,5 @@ aclocal
 autoconf
 automake --add-missing 
 
+rm -rf autoMake
 mkdir autoMake

@@ -5,6 +5,7 @@ bin/*
 a.out
 bin/*
 bin/*
+bld/*
 cmake/*
 bazel-CPP
 bazel-bin
@@ -26,3 +27,9 @@ depcomp
 DsAndAlgo/bld/
 DsAndAlgo/build/
 bld/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

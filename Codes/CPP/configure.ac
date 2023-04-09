@@ -9,12 +9,22 @@ AC_PROG_RANLIB
 AC_LANG(C++)
 # Let's set a C++ compiler
 AC_PROG_CXX
+
 # This suppresses the error we get for also having the cc version of helper library.
 AC_SUBST([CC])
+AC_SUBST([AM_CXXFLAGS])
 # Let's specify where the Makefiles should be produced.
 # These are the same locations as your Makefile.in's, but named as Makefile only
 # We need to do this because both Autoconf and Automake read this file and
 # produce Makefiles from this list.
-AC_CONFIG_FILES([Makefile src/Makefile src/DP/Makefile])
+#AC_CONFIG_FILES([Makefile src/Makefile src/DP/Makefile])
+AC_CONFIG_FILES([
+                Makefile 
+                DsAndAlgo/Makefile
+                DsAndAlgo/src/Makefile
+                DsAndAlgo/src/main/Makefile
+                DsAndAlgo/src/main/cpp/Makefile
+                DsAndAlgo/src/main/cpp/DP/Makefile
+                ])
 # Finally produce "configure" script
 AC_OUTPUT
