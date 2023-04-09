@@ -45,3 +45,8 @@ AC_CONFIG_FILES([
                 ])
 # Finally produce "configure" script
 AC_OUTPUT
+
+
+# Configuring Clang 
+#export CC=clang
+#export CXX=clang++
