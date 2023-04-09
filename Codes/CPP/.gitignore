@@ -5,6 +5,7 @@ bin/*
 a.out
 bin/*
 bin/*
+bld/*
 cmake/*
 bazel-CPP
 bazel-bin
