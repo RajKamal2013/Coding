@@ -7,24 +7,31 @@ Currently I have covered problems in
 
 # Automake 
 ## Compiling and Building
+```
 ./autogen.sh
 cd bld 
 ../configure
 make 
+```
 
 ## Testing 
 Below directories contains binary which can be run 
+```
 cd bld/src/DP/
 cd bld/src/Tree/
-
+```
 
 
 
 # CMake 
 ## Compilinga and Building
+```
 cmake -S . -B build
 cmake --build build 
+```
 
 ## Testing 
+```
 cd build/src/DP/
 cd build/src/Tree/
+```
