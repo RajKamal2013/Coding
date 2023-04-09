@@ -15899,7 +15899,7 @@ INT_MIN
 	groÙ
 ;
 
-	@CPP/src/Tree/ReconstructBstTest.cpp
+	@CPP/src/Tree/ReconstructBSTTest.cpp
 
 1 
 	~"RecÚ¡ruùBST.h
@@ -17575,7 +17575,7 @@ CPP/src/Tree/MinHeightBSTTest.cpp
 CPP/src/Tree/NodeDepth.h
 CPP/src/Tree/NodeDepthTest.cpp
 CPP/src/Tree/ReconstructBST.h
-CPP/src/Tree/ReconstructBstTest.cpp
+CPP/src/Tree/ReconstructBSTTest.cpp
 CPP/src/Tree/SameBSTs.h
 CPP/src/Tree/SameBSTsTest.cpp
 CPP/src/Tree/SymmetricalTree.h

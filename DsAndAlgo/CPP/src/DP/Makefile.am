@@ -1,5 +1,23 @@
-bin_PROGRAMS = main
-main_SOURCES = main.cpp
+bin_PROGRAMS = DPmain DPMaxSubSequenceSumNonAdjacent CoinDenominations LevenshteinDistance NumberOfWaysToTraverseGrid MaximumIncreasingSubSequence LCS MinNumberOfJumps MaxWaterArea
+
+DPmain_SOURCES = main.cpp
+
+DPMaxSubSequenceSumNonAdjacent_SOURCES = MaxSubSequenceNonAdjacent.h MaxSubSequenceNonAdjacentTest.cpp
+
+CoinDenominations_SOURCES = CoinDenominations.h CoinDenominationsTest.cpp
+
+LevenshteinDistance_SOURCES = LD.h LDTest.cpp
+
+NumberOfWaysToTraverseGrid_SOURCES = NumberOfWaysToTraverse.h NumberOfWaysToTraverseTest.cpp
+
+MaximumIncreasingSubSequence_SOURCES = MaxIncreasingSubsequence.h MaxIncreasingSubsequenceTest.cpp
+
+LCS_SOURCES = LCS.h LCSTest.cpp
+
+MinNumberOfJumps_SOURCES = MinNumberOfJumps.h MinNumberOfJumpsTest.cpp
+
+MaxWaterArea_SOURCES = MaxWaterArea.h MaxWaterAreaTest.cpp
+
 # main binary will be installed into the default directory for "bin"s (hence we used the bin
 # prefix
 #noinst_LIBRARIES = libhelper.a

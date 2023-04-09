@@ -27,6 +27,7 @@ depcomp
 DsAndAlgo/bld/
 DsAndAlgo/build/
 bld/
+compile
 
 # Ignore Gradle project-specific cache directory
 .gradle
