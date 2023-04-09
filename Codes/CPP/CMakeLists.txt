@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
+
 project (Coding LANGUAGES CXX)
 
 project(
@@ -19,8 +20,9 @@ SET (CMAKE_CXX_FLAGS_RELEASE        "-O4 -DNDEBUG")
 SET (CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
 set (CMAKE_CXX_STANDARD 11)
 
-  # The compiled library code is here
-add_subdirectory(src)
-add_subdirectory(apps)
+  # The compiled library code is here#
+#add_subdirectory(src)
+#add_subdirectory(apps)
+add_subdirectory(DsAndAlgo)
 
 

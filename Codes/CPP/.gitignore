@@ -5,6 +5,7 @@ bin/*
 a.out
 bin/*
 bin/*
+bld/*
 cmake/*
 bazel-CPP
 bazel-bin
@@ -23,3 +24,9 @@ install-sh
 missing
 m4/
 depcomp
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build

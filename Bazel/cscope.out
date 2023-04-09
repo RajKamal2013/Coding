@@ -1,0 +1,186 @@
+cscope 15 $HOME/Documents/GoogleDrive/GIT/Coding/Bazel               0000000967
+	@HelloWorld/lib/hello-time.cc
+
+1 
+	~"lib/h–lo-time.h
+"
+
+2 
+	~<ùime
+>
+
+3 
+	~<io¡»am
+>
+
+5 
+	$´št_loÿÉime
+() {
+
+6 
+¡d
+::
+time_t
+ 
+»suÉ
+ = std::
+	`time
+(
+nuÎ±r
+);
+
+7 
+¡d
+::
+cout
+ << std::
+	`asùime
+(¡d::
+	`loÿÉime
+(&
+»suÉ
+));
+
+8 
+	}
+}
+
+	@HelloWorld/lib/hello-time.h
+
+1 #´agm¨
+Úû
+
+
+2 
+´št_loÿÉime
+();
+
+	@HelloWorld/main/hello-greet.cc
+
+1 
+	~"maš/h–lo-g»‘.h
+"
+
+2 
+	~<¡ršg
+>
+
+4 
+	g¡d
+::
+¡ršg
+ 
+	$g‘_g»‘
+(cÚ¡ 
+¡d
+::
+¡ršg
+& 
+who
+) {
+
+5  "H–lØ" + 
+who
+;
+
+6 
+	}
+}
+
+	@HelloWorld/main/hello-greet.h
+
+1 #´agm¨
+Úû
+
+
+2 
+	~<¡ršg
+>
+
+4 
+	g¡d
+::
+¡ršg
+ 
+g‘_g»‘
+(cÚ¡ 
+¡d
+::¡ršg &
+thšg
+);
+
+	@HelloWorld/main/hello-world.cc
+
+1 
+	~"lib/h–lo-time.h
+"
+
+2 
+	~"maš/h–lo-g»‘.h
+"
+
+3 
+	~<io¡»am
+>
+
+4 
+	~<¡ršg
+>
+
+6 
+	$maš
+(
+¬gc
+, ** 
+¬gv
+) {
+
+7 
+¡d
+::
+¡ršg
+ 
+who
+ = "world";
+
+8 ià(
+¬gc
+ > 1) {
+
+9 
+who
+ = 
+¬gv
+[1];
+
+11 
+¡d
+::
+cout
+ << 
+	`g‘_g»‘
+(
+who
+è<< std::
+’dl
+;
+
+12 
+	`´št_loÿÉime
+();
+
+14 
+	}
+}
+
+	@
+1
+.
+0
+5
+149
+HelloWorld/lib/hello-time.cc
+HelloWorld/lib/hello-time.h
+HelloWorld/main/hello-greet.cc
+HelloWorld/main/hello-greet.h
+HelloWorld/main/hello-world.cc

@@ -847,3 +847,5 @@ Codes/CPP/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/databas
 Codes/CPP/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/databaseConnectionLibrary.dir/compiler_depend.internal
 Codes/CPP/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeCache.txt
 Codes/CPP/1
+*.class
+Codes/CPP/DsAndAlgo/src/main/.vscode/settings.json

@@ -1,0 +1,5 @@
+#add_executable(srcMain main.cpp)
+#target_compile_features(srcMain PUBLIC cxx_std_11)
+#include_directories(/opt/NVIDIA_GPU_Computing_SDK/OpenCL/common/inc)
+#add_subdirectory(Tree)
+add_subdirectory(src)
