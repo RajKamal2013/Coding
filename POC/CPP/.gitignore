@@ -1,0 +1,35 @@
+build/*
+out/*
+out/build/*
+bin/*
+a.out
+bin/*
+bin/*
+bld/*
+cmake/*
+bazel-CPP
+bazel-bin
+bazel-out
+autoMake
+autom4te.cache/
+bazel-testlogs
+*.in
+Makefile.in
+Makefile
+*.a
+*.o
+aclocal.m4
+configure
+install-sh
+missing
+m4/
+depcomp
+DsAndAlgo/bld/
+DsAndAlgo/build/
+bld/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
