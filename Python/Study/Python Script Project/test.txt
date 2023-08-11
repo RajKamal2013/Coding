@@ -1,0 +1,63 @@
+filename : psif_fw_addr.h
+bracket testing
+start-> enum psif_csr_map {
+
+opening-> 	 * {UF(35 UFs), tsu_qosl (High/Low BAR), tsu_sl, port}.
+
+push-> ['{']
+closing-> 	 * {UF(35 UFs), tsu_qosl (High/Low BAR), tsu_sl, port}.
+
+pop-> ['}']
+opening-> 	 * {UF, tsu_qosl (High/Low BAR), tsu_sl}.
+
+push-> ['{']
+closing-> 	 * {UF, tsu_qosl (High/Low BAR), tsu_sl}.
+
+pop-> ['}']
+opening-> 	 * Register Table: {uf, port}
+
+push-> ['{']
+closing-> 	 * Register Table: {uf, port}
+
+pop-> ['}']
+opening-> 	 * IB link width per port. 0=X4 and 1=X1. Address to the Register Table: {uf,
+
+push-> ['{']
+closing-> 	 * port}
+
+pop-> ['}']
+opening-> 	 * MAC address #0 table for uf 0-33. Inputs/addressing to this table are {UF,
+
+push-> ['{']
+closing-> 	 * port}.
+
+pop-> ['}']
+opening-> 	 * MAC address #1 table for uf 0-33. Inputs/addressing to this table are {UF,
+
+push-> ['{']
+closing-> 	 * port}.
+
+pop-> ['}']
+opening-> 	 * VID table for uf 0-33. Inputs/addressing to this table are {UF, port,
+
+push-> ['{']
+closing-> 	 * index}.
+
+pop-> ['}']
+opening-> 	/* MAC control per port per UF 0-33. Address to the Register Table: {uf port} */
+
+push-> ['{']
+closing-> 	/* MAC control per port per UF 0-33. Address to the Register Table: {uf port} */
+
+pop-> ['}']
+opening-> 	 * VLAN membership table per UF 0-33. Inputs/addressing to this table is {UF,
+
+push-> ['{']
+closing-> 	 * vid[11:6}}.
+
+pop-> ['}', '}']
+End-> 	 * vid[11:6}}.
+	 */
+
+bracket done
+done
