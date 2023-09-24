@@ -32,4 +32,8 @@ add_executable(MinNumberOfJumps
                )
 add_executable(MaxWaterArea
                MaxWaterArea.h 
-               MaxWaterAreaTest.cpp)   
+               MaxWaterAreaTest.cpp) 
+
+add_executable(Knapsack
+               Knapsack.h 
+               KnapsackTest.cpp)

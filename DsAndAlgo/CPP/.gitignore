@@ -34,3 +34,5 @@ compile
 
 # Ignore Gradle build output directory
 build
+
+*.dSYM/
