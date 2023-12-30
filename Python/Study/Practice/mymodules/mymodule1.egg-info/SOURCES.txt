@@ -1,0 +1,8 @@
+README.txt
+athletelist.py
+mymodule1.py
+setup.py
+mymodule1.egg-info/PKG-INFO
+mymodule1.egg-info/SOURCES.txt
+mymodule1.egg-info/dependency_links.txt
+mymodule1.egg-info/top_level.txt

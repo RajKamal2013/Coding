@@ -1,0 +1,4 @@
+asyncIo.c:124:6: warning: unused variable 'i' [-Wunused-variable]
+        int i;
+            ^
+1 warning generated.
