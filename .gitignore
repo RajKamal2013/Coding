@@ -206,3 +206,4 @@ UnitTest/CPP/GTestCodes/GTest/CMakeLists 2.txt
 UnitTest/CPP/GTestCodes/GTest/helloTest 2.cc
 UnitTest/CPP/GTestCodes/GTest/helloTest 2.cpp
 UnitTest/CPP/GTestCodes/GTest/test 2.cpp
+Scala/Core/build 2.sbt
