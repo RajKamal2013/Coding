@@ -4,6 +4,9 @@
  * made using denominations. 
  * denoms = {1, 5} Target: 6
  * Ans: 2 (1*6) and (1*1 + 5 * 1)
+ * 
+ * --------
+ * 
  */
 #pragma once 
 

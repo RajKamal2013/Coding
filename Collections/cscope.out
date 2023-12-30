@@ -1,0 +1,392 @@
+cscope 15 $HOME/Documents/GoogleDrive/GIT/Coding/Collections               0000002282
+	@CPP/src/parsingURLParams.cpp
+
+1 
+	~<io¡»am
+>
+
+2 
+	~<veùÜ
+>
+
+3 
+	~<unÜd”ed_m­
+>
+
+4 
+	~<¡ršg
+>
+
+5 
+	~<s¡»am
+>
+
+7 
+	g¡d
+::
+veùÜ
+<
+¡d
+::
+¡ršg
+> 
+¥l™U¾
+(¡d::¡ršg 
+u¾
+, cÚ¡ 
+d–im™”
+='/') {
+
+8 
+¡d
+::
+¡ršg¡»am
+ 
+ss
+(
+u¾
+);
+
+9 
+	g¡d
+::
+¡ršg
+ 
+tok’
+;
+
+10 
+	g¡d
+::
+veùÜ
+<
+¡d
+::
+¡ršg
+> 
+u¾VeùÜ
+;
+
+11 
+g‘lše
+(
+ss
+, 
+tok’
+, 
+d–im™”
+)) {
+
+12 
+	gu¾VeùÜ
+.
+push_back
+(
+tok’
+);
+
+14  
+	gu¾VeùÜ
+;
+
+62 
+	g¡d
+::
+unÜd”ed_m­
+<
+¡d
+::
+¡ršg
+, std::¡ršg> 
+g‘U¾P¬ams
+(cÚ¡ std::¡ršg 
+»gi¡”edU¾
+,
+
+63 cÚ¡ 
+¡d
+::
+¡ršg
+ 
+»que¡U¾
+,
+
+64 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+> 
+ÝtiÚ®P¬ams
+={}) {
+
+66 
+¡d
+::
+unÜd”ed_m­
+<¡d::
+¡ršg
+, std::¡ršg> 
+·¿msM­
+;
+
+68 
+	g¡d
+::
+veùÜ
+<
+¡d
+::
+¡ršg
+> 
+»que¡U¾VeùÜ
+ = 
+¥l™U¾
+(
+»que¡U¾
+);
+
+69 
+	g¡d
+::
+veùÜ
+<
+¡d
+::
+¡ršg
+> 
+»gi¡”edU¾VeùÜ
+ = 
+¥l™U¾
+(
+»gi¡”edU¾
+);
+
+72 
+	gi
+ = 0;
+
+73 autØ
+	gd©a
+: 
+»gi¡”edU¾VeùÜ
+) {
+
+74 ià(
+d©a
+.
+sub¡r
+(0, 1).
+com·»
+("{"è=ð0 && d©a.sub¡r(d©a.
+Ëngth
+() - 1, 1).compare("}") == 0) {
+
+75 
+·¿msM­
+[
+d©a
+] = 
+»que¡U¾VeùÜ
+[
+i
+];
+
+77 
+	gi
+++;
+
+81 ià(
+	gÝtiÚ®P¬ams
+.
+em±y
+()) {
+
+82  
+	g·¿msM­
+;
+
+86 
+	g»que¡U¾VeùÜ
+ = 
+¥l™U¾
+(
+»que¡U¾
+, '?');
+
+87 ià(
+	g»que¡U¾VeùÜ
+.
+size
+() < 2) {
+
+89  
+	g·¿msM­
+;
+
+92 
+	g¡d
+::
+unÜd”ed_m­
+<
+¡d
+::
+¡ršg
+, std::¡ršg> 
+ÝtiÚ®P¬amsM­
+;
+
+93 
+	g»que¡U¾VeùÜ
+ = 
+¥l™U¾
+(
+»que¡U¾VeùÜ
+[1], '&');
+
+94 autØ
+	gd©a
+: 
+»que¡U¾VeùÜ
+) {
+
+96 autØ
+ÝtiÚ®P¬amVeùÜ
+ = 
+¥l™U¾
+(
+d©a
+, '=');
+
+97 ià(
+	gÝtiÚ®P¬amVeùÜ
+.
+size
+() == 2) {
+
+98 
+ÝtiÚ®P¬amsM­
+[
+ÝtiÚ®P¬amVeùÜ
+[0]] = optionalParamVector[1];
+
+102 autØ
+	gd©a
+: 
+ÝtiÚ®P¬ams
+) {
+
+103 ià(
+ÝtiÚ®P¬amsM­
+.
+fšd
+(
+d©a
+è!ðÝtiÚ®P¬amsM­.
+’d
+()) {
+
+104 
+·¿msM­
+[
+d©a
+] = 
+ÝtiÚ®P¬amsM­
+[data];
+
+107  
+	g·¿msM­
+;
+
+110 
+	$maš
+() {
+
+111 cÚ¡ 
+¡d
+::
+¡ršg
+ 
+CLOUD_DOMAIN_PARAM
+ = "{cloud-domains}";
+
+112 
+¡d
+::
+¡ršg
+ 
+»que¡URL
+ = "/cloud-domains/edbd94e2/software/esx?action=compliance-check&limit=10&org=vmcA";
+
+113 
+¡d
+::
+¡ršg
+ 
+»gi¡”dURL
+ = "/þoud-domašs/" + 
+CLOUD_DOMAIN_PARAM
+ + "/software/esx?action=compliance-check";
+
+115 
+¡d
+::
+veùÜ
+<¡d::
+¡ršg
+> 
+ÝtiÚ®P¬am
+ = {"action"};
+
+117 autØ
+·¿mM­
+ = 
+	`g‘U¾P¬ams
+(
+»gi¡”dURL
+, 
+»que¡URL
+, 
+ÝtiÚ®P¬am
+);
+
+119 
+¡d
+::
+cout
+ << "GÙ URL P¬am ªd o±iÚ® v®ue" << std::
+’dl
+;
+
+120 autØ
+d©a
+:
+·¿mM­
+) {
+
+121 
+¡d
+::
+cout
+ << 
+d©a
+.
+fœ¡
+ << " " << d©a.
+£cÚd
+ << std::
+’dl
+;
+
+124 
+	}
+}
+
+	@
+1
+.
+0
+1
+29
+CPP/src/parsingURLParams.cpp

@@ -113,8 +113,6 @@ POC/CPP/GTestCodes/GTest/CMakeLists 2.txt
 POC/CPP/GTestCodes/GTest/helloTest 2.cc
 POC/CPP/GTestCodes/GTest/helloTest 2.cpp
 POC/CPP/GTestCodes/GTest/test 2.cpp
-POC/CPP/src/CMakeLists 2.txt
-POC/CPP/src/CMakeListsCopy 2.txt
 POC/CPP/src/DP/CMakeLists 2.txt
 POC/CPP/src/DP/CoinDenominations 2.h
 POC/CPP/src/DP/CoinDenominationsTest 2.cpp
@@ -207,3 +205,4 @@ UnitTest/CPP/GTestCodes/GTest/helloTest 2.cc
 UnitTest/CPP/GTestCodes/GTest/helloTest 2.cpp
 UnitTest/CPP/GTestCodes/GTest/test 2.cpp
 Scala/Core/build 2.sbt
+
