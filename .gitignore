@@ -208,3 +208,4 @@ Scala/Core/build 2.sbt
 
 POC/CPP/src/CMakeLists 2.txt
 POC/CPP/src/CMakeListsCopy 2.txt
+*.jar
