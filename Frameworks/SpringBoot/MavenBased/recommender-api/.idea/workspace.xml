@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2eb02634-6a7f-472b-8b09-71ecc2f95102" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/PlayerErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/PlayerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/PlayerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/java/io/datajek/springrest/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GradleBased/springrest/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/CollaborativeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/ContentBasedFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/CollaborativeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/ContentBasedFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/MovieRecommenderSystemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/RecommenderImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/RecommendationsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/RecommenderApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/myapp.log.2024-01-26.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/PlayerErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/PlayerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/PlayerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/java/io/datajek/springrest/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springrest/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/myapp.log.2024-01-24.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJdbc/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJdbc/PlayerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/TennisPlayerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/PlayerSpringDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/TennisPlayerSpringDataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tennis-player/src/main/resources/schema.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2awPgLgpWCl7e8Sr9jgIHWa7BJt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.RecommenderApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="RecommenderApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.datajek.springbootdemo.recommenderapi.RecommenderApiApplication" />
+      <module name="recommender-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.datajek.springbootdemo.recommenderapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RecommenderApiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-e1d2075fd9a7-44b2a9b4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2eb02634-6a7f-472b-8b09-71ecc2f95102" name="Changes" comment="" />
+      <created>1705226777905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705226777905</updated>
+    </task>
+    <servers />
+  </component>
+</project>

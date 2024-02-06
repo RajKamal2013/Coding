@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package dummy;
-
-message DummyMessage {
-  uint32 id = 1;
-}

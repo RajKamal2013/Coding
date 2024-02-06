@@ -4,17 +4,9 @@
 AutoMake/CPP/autom4te.cache/requests
 *.log
 *.status
-AutoMake/CPP/bin/Makefile
-AutoMake/CPP/bin/src/.deps/main.Po
-AutoMake/CPP/bin/src/main
-*.o
-AutoMake/CPP/bin/src/Makefile
-AutoMake/CPP/configure
-AutoMake/CPP/depcomp
-AutoMake/CPP/install-sh
 *.in
-AutoMake/CPP/missing
-AutoMake/CPP/configure
+*a.out
+*.o
 *.Po
 *.make
 *.gradle
@@ -27,11 +19,29 @@ AutoMake/CPP/configure
 *.class
 *.cache
 *mo
+*.plist
+*gradlew
+*.jar
+*.kts
 
+# Automake
+AutoMake/CPP/bin/Makefile
+AutoMake/CPP/bin/src/.deps/main.Po
+AutoMake/CPP/bin/src/main
+AutoMake/CPP/bin/src/Makefile
+AutoMake/CPP/configure
+AutoMake/CPP/depcomp
+AutoMake/CPP/install-sh
+AutoMake/CPP/missing
+AutoMake/CPP/configure
+
+
+#BAZEL
 bazel-bin/*
 bazel-CPP/bazel-out/*
 bazel-out/*
 
+#CMake
 CMake/build/*
 CMake/CPP/src/build/*
 CMake/build/apps/AppMain
@@ -40,19 +50,17 @@ CMake/GTestCodes/GTest/build/*
 CMake/CPP/1
 CMake/.vscode/*
 
-Codes/CPP/GTestCodes/GTest/build/*
-Codes/CPP/src/build/*
-Codes/CPP/Makefile.am
-Codes/CPP/GTestCodes/*
-Codes/CPP/GTestCodes
-Codes/CPP/1
-Codes/CPP/DsAndAlgo/src/main/.vscode/settings.json
+#C
+C/Study
 
-Courses/ParallelComputingJava/miniproject_0/.idea
-Courses/ParallelComputingJava/miniproject_0/.idea/*
-Courses/ParallelComputingJava/miniproject_0/target/*
-Courses/ParallelComputingJava/miniproject_0/target/*
+# GTest
+UnitTest/CPP/GTestCodes
 
+
+# Courses
+
+
+#DsAndAlgo
 DsAndAlgo/Java/Coding/build/tmp/compileJava/compileTransaction/stash-dir/Main.class.uniqueId1
 DsAndAlgo/CPP/src/DP/KnapsackTest.dSYM/Contents/Info.plist
 DsAndAlgo/CPP/src/DP/KnapsackTest.dSYM/Contents/Resources/DWARF/KnapsackTest
@@ -62,158 +70,42 @@ DsAndAlgo/Java/Coding/.idea/libraries/gradle_wrapper.xml
 DsAndAlgo/Java/Coding/build/tmp/compileJava/compileTransaction/stash-dir/Knapsack.class.uniqueId0
 DsAndAlgo/Java/Coding/build/tmp/compileJava/previous-compilation-data.bin
 
-Gradle/CPP/.gitattributes 2
-Gradle/CPP/.gitignore 2
-Gradle/CPP/basic/.gitattributes 2
-Gradle/CPP/basic/.gitignore 2
-Gradle/CPP/basic/gradlew 2
-Gradle/CPP/gradlew 3
-Gradle/CPP/gradlew 4
-Gradle/demo/.idea/*
-Gradle/demo/.idea/vcs.xml
-Gradle/demo/.idea/jarRepositories.xml
 
-libs/jsoncpp/bazel-bin
+#FileWatcher
+
+
+#Framework 
+Frameworks/SpringBoot/Hands-on-Application-Development-with-Spring-Boot-2
+
+#GoLang
+
+
+# Gradle
+
+# Java 
 libs/jsoncpp/bazel-jsoncpp
 libs/jsoncpp/bazel-out
 libs/jsoncpp/bazel-testlogs
 libs/jsoncpp/build/*
 
-POC/Commands 2.txt
-POC/CPP/.gitattributes 2
-POC/CPP/.gitignore 2
-POC/CPP/autogen 2.sh
-POC/CPP/CMakeLists 2.txt
-POC/CPP/command 2.txt
-POC/CPP/DsAndAlgo/CMakeLists 2.txt
-POC/CPP/DsAndAlgo/src/CMakeLists 2.txt
-POC/CPP/DsAndAlgo/src/main/CMakeLists 2.txt
-POC/CPP/DsAndAlgo/src/main/cpp/CMakeLists 2.txt
-POC/CPP/DsAndAlgo/src/main/cpp/DP/CMakeLists 2.txt
-POC/CPP/DsAndAlgo/src/main/cpp/DP/CoinDenominationsTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/LCSTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/LDTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/MaxIncreasingSubsequenceTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/MaxSubSequenceNonAdjacentTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/MaxWaterAreaTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/MinCoinDenominationsTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/MinNumberOfJumpsTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/DP/NumberOfWaysToTraverseTest 2.cpp
-POC/CPP/DsAndAlgo/src/main/cpp/main 2.cpp
-POC/CPP/gradlew 2
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/CMakeLists 2.txt
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/Employee 2.hpp
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/EmployeeManager 2.cpp
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/EmployeeManager 2.hpp
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/IDatabaseConnection 2.cpp
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/IDatabaseConnection 2.hpp
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/main 2.cpp
-POC/CPP/GTestCodes/GoogleTestProject_backup_mock_full/testRunner 2.cpp
-POC/CPP/GTestCodes/GTest/CMakeLists 2.txt
-POC/CPP/GTestCodes/GTest/helloTest 2.cc
-POC/CPP/GTestCodes/GTest/helloTest 2.cpp
-POC/CPP/GTestCodes/GTest/test 2.cpp
-POC/CPP/src/DP/CMakeLists 2.txt
-POC/CPP/src/DP/CoinDenominations 2.h
-POC/CPP/src/DP/CoinDenominationsTest 2.cpp
-POC/CPP/src/DP/LCS 2.h
-POC/CPP/src/DP/LCSTest 2.cpp
-POC/CPP/src/DP/LD 2.h
-POC/CPP/src/DP/LDNotCorrect 2.h
-POC/CPP/src/DP/LDTest 2.cpp
-POC/CPP/src/DP/main 2.cpp
-POC/CPP/src/DP/MaxIncreasingSubsequence 2.h
-POC/CPP/src/DP/MaxIncreasingSubsequenceTest 2.cpp
-POC/CPP/src/DP/MaxSubSequenceNonAdjacent 2.h
-POC/CPP/src/DP/MaxSubSequenceNonAdjacentTest 2.cpp
-POC/CPP/src/DP/MaxWaterArea 2.h
-POC/CPP/src/DP/MaxWaterAreaTest 2.cpp
-POC/CPP/src/DP/MinCoinDenominations 2.h
-POC/CPP/src/DP/MinCoinDenominationsTest 2.cpp
-POC/CPP/src/DP/MinNumberOfJumps 2.h
-POC/CPP/src/DP/MinNumberOfJumpsTest 2.cpp
-POC/CPP/src/DP/NumberOfWaysToTraverse 2.h
-POC/CPP/src/DP/NumberOfWaysToTraverseTest 2.cpp
-POC/CPP/src/DP/Topics 2.txt
-POC/CPP/src/main 2.cpp
-POC/CPP/src/Tree/b+Tree 2.cpp
-POC/CPP/src/Tree/BinaryTree 2.cpp
-POC/CPP/src/Tree/BinaryTree 2.h
-POC/CPP/src/Tree/BinaryTreeTest 2.cpp
-POC/CPP/src/Tree/BranchSum 2.h
-POC/CPP/src/Tree/BranchSumTest 2.cpp
-POC/CPP/src/Tree/BST 2.cpp
-POC/CPP/src/Tree/BST 2.h
-POC/CPP/src/Tree/BSTTest 2.h
-POC/CPP/src/Tree/CMakeLists 2.txt
-POC/CPP/src/Tree/Codes 2.md
-POC/CPP/src/Tree/debug 2.h
-POC/CPP/src/Tree/Diameter 2.h
-POC/CPP/src/Tree/DiameterTest 2.cpp
-POC/CPP/src/Tree/FindClosestValue 2.h
-POC/CPP/src/Tree/FindClosestValueTest 2.cpp
-POC/CPP/src/Tree/FindSuccessor 2.h
-POC/CPP/src/Tree/FindSuccessorTest 2.cpp
-POC/CPP/src/Tree/InvertBinaryTree 2.h
-POC/CPP/src/Tree/InvertBinaryTreeTest 2.cpp
-POC/CPP/src/Tree/KthLargestValueInBST 2.h
-POC/CPP/src/Tree/KthLargestValueInBSTTest 2.cpp
-POC/CPP/src/Tree/main 2.cpp
-POC/CPP/src/Tree/MergeBinaryTree 2.h
-POC/CPP/src/Tree/MergeBinaryTreeTest 2.cpp
-POC/CPP/src/Tree/MinHeightBST 2.h
-POC/CPP/src/Tree/MinHeightBSTTest 2.cpp
-POC/CPP/src/Tree/NodeDepth 2.h
-POC/CPP/src/Tree/NodeDepthTest 2.cpp
-POC/CPP/src/Tree/ReconstructBST 2.h
-POC/CPP/src/Tree/ReconstructBstTest 2.cpp
-POC/CPP/src/Tree/SameBSTs 2.h
-POC/CPP/src/Tree/SameBSTsTest 2.cpp
-POC/CPP/src/Tree/SymmetricalTree 2.h
-POC/CPP/src/Tree/SymmetricalTreeTest 2.cpp
-POC/CPP/src/Tree/validateBST 2.h
-POC/CPP/src/Tree/ValidateBSTTest 2.cpp
-POC/CPP/ToDo 2.md
-POC/CPP/WORKSPACE 2
 
+# POC
+POC/CPP
+
+
+#Python
 Python/health 2.conf
-Python/main 3.py
-Python/main 4.py
-Python/pymongo/1 3
-Python/pymongo/1 4
-Python/pymongo/mongotest 3.py
-Python/pymongo/mongotest 4.py
-Python/pymongo/mongotest1 3.py
-Python/pymongo/mongotest1 4.py
+Python/pymongo
+Python/Study
 
-Scala/Core/.bsp/sbt.json
-Scala/Core/.idea/*
-Scala/Core/target/*
-Scala/Core/.bsp/*
 
-RPC/ProtocolBuffer/proto-java/.idea/workspace.xml
-RPC/ProtocolBuffer/proto-java/.idea/*
-RPC/ProtocolBuffer/proto-java/.idea/workspace.xml
-Rust/README 2.md
+#RPC
+RPC/ProtocolBuffer
 
-UnitTest/CPP/GTestCodes/GoogleTestProject_backup_mock_full/*
-UnitTest/CPP/GTestCodes/GoogleTestProject_backup_mock_full
-UnitTest/CPP/GTestCodes/GoogleTestProjectCXX_Standard_11 2.zip
-UnitTest/CPP/GTestCodes/GTest/build/*
-UnitTest/CPP/GTestCodes/GTest/CMakeLists 2.txt
-UnitTest/CPP/GTestCodes/GTest/helloTest 2.cc
-UnitTest/CPP/GTestCodes/GTest/helloTest 2.cpp
-UnitTest/CPP/GTestCodes/GTest/test 2.cpp
-Scala/Core/build 2.sbt
+#Rust
 
-POC/CPP/src/CMakeLists 2.txt
-POC/CPP/src/CMakeListsCopy 2.txt
-*.jar
-*.jar
-*.kts
-*.jar
-*.jar
-Frameworks/SpringBoot/GradleBased/movie-recommender-system/gradlew
-*.jar
-Frameworks/SpringBoot/GradleBased/movie-recommender-system/gradle/wrapper/gradle-wrapper.jar
-Frameworks/SpringBoot/GradleBased/springrest/gradle/wrapper/gradle-wrapper.jar
+#Scala
+Scala/Core
+
+#UnitTest
+UnitTest/CPP/GtestCodes

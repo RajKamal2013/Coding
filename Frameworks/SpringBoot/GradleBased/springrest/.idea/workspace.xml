@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23b67ba6-581b-42ef-bbd4-50724cc7e8b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/CollaborativeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/ContentBasedFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/CollaborativeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/ContentBasedFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/MovieRecommenderSystemApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/RecommenderImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/RecommendationsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/RecommenderApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/myapp.log.2024-01-26.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/resources/import.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/myapp.log.2024-01-24.0.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJdbc/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJdbc/PlayerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/PlayerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/TennisPlayerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/PlayerSpringDataRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/TennisPlayerSpringDataApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/resources/schema.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="springrest" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2bWklSC3Ncy9Vn9JomcvilI110r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build springrest.executor": "Run",
+    "Gradle.springrest [:TennisPlayerSpringRestApplication.main()].executor": "Run",
+    "Gradle.springrest.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.TennisPlayerSpringRestApplication">
+    <configuration name="TennisPlayerSpringRestApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.datajek.springrest.TennisPlayerSpringRestApplication" />
+      <module name="springrest.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.datajek.springrest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="springrest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.springrest" />
+        <item itemvalue="Application.TennisPlayerSpringRestApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-semeru-11.0.22-4caba194b151-8ead774a" />
+        <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-96c0d24d" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23b67ba6-581b-42ef-bbd4-50724cc7e8b0" name="Changes" comment="" />
+      <created>1706338373461</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706338373461</updated>
+    </task>
+    <servers />
+  </component>
+</project>
