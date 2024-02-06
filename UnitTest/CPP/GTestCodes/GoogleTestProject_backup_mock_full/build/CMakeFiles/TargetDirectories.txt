@@ -1,6 +1,0 @@
-/Users/rakamal/Documents/GoogleDrive/GIT/Coding/CMake/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/databaseConnectionLibrary.dir
-/Users/rakamal/Documents/GoogleDrive/GIT/Coding/CMake/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/employeeManagerLibrary.dir
-/Users/rakamal/Documents/GoogleDrive/GIT/Coding/CMake/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/mainApp.dir
-/Users/rakamal/Documents/GoogleDrive/GIT/Coding/CMake/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/testRunner.dir
-/Users/rakamal/Documents/GoogleDrive/GIT/Coding/CMake/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/edit_cache.dir
-/Users/rakamal/Documents/GoogleDrive/GIT/Coding/CMake/GTestCodes/GoogleTestProject_backup_mock_full/build/CMakeFiles/rebuild_cache.dir

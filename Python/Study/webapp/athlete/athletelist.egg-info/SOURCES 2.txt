@@ -1,6 +1,0 @@
-athletelist.py
-setup.py
-athletelist.egg-info/PKG-INFO
-athletelist.egg-info/SOURCES.txt
-athletelist.egg-info/dependency_links.txt
-athletelist.egg-info/top_level.txt

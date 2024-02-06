@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-message Money {
-    string CurrencyCode = 1;
-    uint64 IntegralAmount =  2;
-    uint64 DecimalAmount = 3;
-}
