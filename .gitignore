@@ -20,9 +20,10 @@ AutoMake/CPP/autom4te.cache/requests
 *.cache
 *mo
 *.plist
-*gradlew
+*gradlew*
 *.jar
 *.kts
+*.bat
 
 # Automake
 AutoMake/CPP/bin/Makefile
