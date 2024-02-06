@@ -9,7 +9,6 @@ AutoMake/CPP/autom4te.cache/requests
 *.o
 *.Po
 *.make
-*.gradle
 *.properties
 *.jar
 *.cmake
