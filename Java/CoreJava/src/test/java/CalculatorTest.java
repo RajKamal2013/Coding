@@ -1,5 +1,4 @@
-package org.DsAndAlgo;
-
+import coding.unitTest.Calculator;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -87,7 +86,7 @@ public class CalculatorTest {
         System.out.println("Counter Value is - " + counter);
     }
 
-    @org.junit.jupiter.api.RepeatedTest(value = 5, name = "{displayName} - repetition {currentRepetition}/{totalRepetitions}")
+    @RepeatedTest(value = 5, name = "{displayName} - repetition {currentRepetition}/{totalRepetitions}")
     @DisplayName("Repeated Addition 7 Times")
     void shouldTestAddition5Times() {
         System.out.println("Repeated Test");

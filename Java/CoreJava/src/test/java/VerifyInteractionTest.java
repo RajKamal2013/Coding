@@ -1,5 +1,3 @@
-package org.DsAndAlgo;
-
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.mockito.internal.verification.VerificationModeFactory;

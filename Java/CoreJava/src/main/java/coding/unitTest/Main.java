@@ -1,4 +1,4 @@
-package org.DsAndAlgo;
+package coding.unitTest;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
