@@ -161,3 +161,7 @@ Java/CoreJava/CoreJava/
 *.bat
 Java/CoreJava/.idea/google-java-format.xml
 Java/CoreJava/.idea/google-java-format.xml
+gradlew.bat
+gradlew.bat
+gradlew
+gradlew

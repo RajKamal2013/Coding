@@ -1,4 +1,4 @@
-package org.DsAndAlgo;
+package coding.unitTest;
 
 public class AddServiceImpl implements AddService {
     @Override

@@ -1,29 +1,19 @@
-package org.DsAndAlgo;
-
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
-public class CalcService2Test {
-
-    CalcService calcService;
-
-    @Mock
-    AddService addService;
-
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.initMocks(this);
-    }
+public class CalcService1Test {
 
     @Test
-    public void testCalc() {
+    void testCalc() {
         System.out.println("**--- Test testCalc executed ---**");
 
+        AddService addService;
+        CalcService calcService;
+
+        addService = Mockito.mock(AddService.class);
         calcService = new CalcService(addService);
 
         int num1 = 11;
