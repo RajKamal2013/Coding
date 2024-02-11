@@ -14,7 +14,7 @@ public class Calculator {
         return number % 2 == 0;
     }
 
-    enum Operation {
+    public enum Operation {
         ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION
     }
 }

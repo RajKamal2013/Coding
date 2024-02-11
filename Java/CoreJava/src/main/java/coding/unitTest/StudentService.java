@@ -9,7 +9,7 @@ public class StudentService {
         this.studentDao = studentDao;
     }
 
-    int findTotal() {
+    public int findTotal() {
         //fetch student marks from a database
         int[] array = studentDao.getMarks();
         int sum = 0;
