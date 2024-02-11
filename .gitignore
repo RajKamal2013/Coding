@@ -89,6 +89,7 @@ libs/jsoncpp/bazel-testlogs
 libs/jsoncpp/build/*
 
 
+
 # POC
 POC/CPP
 
@@ -158,3 +159,5 @@ bin/
 Java/CoreJava/CoreJava/
 
 *.bat
+Java/CoreJava/.idea/google-java-format.xml
+Java/CoreJava/.idea/google-java-format.xml
