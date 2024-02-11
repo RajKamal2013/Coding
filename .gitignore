@@ -23,6 +23,11 @@ AutoMake/CPP/autom4te.cache/requests
 *.jar
 *.kts
 *.bat
+.idea
+.idea/*
+.git
+.git/*
+.DS_Store
 
 # Automake
 AutoMake/CPP/bin/Makefile
