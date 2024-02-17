@@ -1,0 +1,3 @@
+set(HEADER_LIST "${GtestProject_SOURCE_DIR}/src/lib/greetings.h")
+add_library(greetings_lib SHARED greetings.cc ${HEADER_LIST})
+
