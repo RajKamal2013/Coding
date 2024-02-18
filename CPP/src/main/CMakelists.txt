@@ -12,6 +12,20 @@ target_link_libraries(greetings_main PRIVATE greetings_lib)
 set(HEADER_LIST "${GtestProject_SOURCE_DIR}/src/main/unit_test/sample1.h")
 add_library(unit_test_samples_lib SHARED unit_test/sample1.cc ${HEADER_LIST})
 
+set(HEADER_LIST "${GtestProject_SOURCE_DIR}/src/main/unit_test/sample2.h")
+add_library(unit_test_string_lib SHARED unit_test/sample2.cc ${HEADER_LIST})
+
+set(QUEUE_DIR "${GtestProject_SOURCE_DIR}/src/main/queue")
+add_library(queue_lib INTERFACE)
+target_include_directories(
+  queue_lib
+  INTERFACE
+  QUEUE_DIR
+)
+set(HEADER_LIST "${GtestProject_SOURCE_DIR}/src/main/misc/counter.h")
+add_library(counter_lib SHARED misc/counter.cc ${HEADER_LIST})
+
+
 #target_link_libraries(greetings_main, ../lib/)
 
 #set(BINARY ${CMAKE_PROJECT_NAME})

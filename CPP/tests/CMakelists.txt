@@ -18,3 +18,38 @@ target_link_libraries(
   PRIVATE unit_test_samples_lib
   GTest::gtest_main
 )
+
+add_executable(unit_test_string_tests unit_test/sample2_test.cc)
+target_link_libraries(
+  unit_test_string_tests 
+  PRIVATE unit_test_string_lib
+  GTest::gtest_main
+)
+
+add_executable(unit_test_queue_tests queue_test.cc)
+target_include_directories(
+    unit_test_queue_tests
+    PUBLIC
+    ${PROJECT_SOURCE_DIR}/main/src/queue
+  )
+target_link_libraries(
+  unit_test_queue_tests 
+  PUBLIC
+  GTest::gtest_main
+)
+
+add_executable(queue_tests queue_test.cc)
+target_link_libraries(
+  queue_tests
+  PUBLIC GTest::gtest_main
+  queue_lib
+  
+)
+
+
+add_executable(counter_tests counter_test.cc)
+target_link_libraries(
+  counter_tests
+  PUBLIC GTest::gtest_main
+  counter_lib  
+)
