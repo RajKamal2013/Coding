@@ -58,6 +58,15 @@ CMake/.vscode/*
 #C
 C/Study
 
+#CPP
+CPP/bazel-CPP
+CPP/bazel-bin
+CPP/bazel-out
+CPP/bazel-testlogs
+CPP/build
+CPP/MODULE.bazel
+CPP/MODULE.bazel.lock
+
 # GTest
 UnitTest/CPP/GTestCodes
 

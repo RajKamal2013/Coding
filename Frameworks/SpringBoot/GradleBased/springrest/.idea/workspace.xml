@@ -4,51 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23b67ba6-581b-42ef-bbd4-50724cc7e8b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/datajek/springrest/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/CollaborativeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/ContentBasedFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/Autowiring/RecommenderImplementation3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/CollaborativeFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/ContentBasedFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/MovieRecommenderSystemApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/BeanScoping/RecommenderImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/RecommendationsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/movie-recommender-system/src/main/java/io/datajek/springbasics/movierecommendersystem/RestController/RecommenderApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/myapp.log.2024-01-26.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/java/io/datajek/springrest/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/springrest/src/main/resources/import.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/myapp.log.2024-01-24.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJdbc/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJdbc/PlayerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpa/TennisPlayerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/PlayerSpringDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/java/io/datajek/springdata/tennisplayerJpaRepository/TennisPlayerSpringDataApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MavenBased/tennis-player/src/main/resources/schema.sql" afterDir="false" />
-    </list>
+    <list default="true" id="23b67ba6-581b-42ef-bbd4-50724cc7e8b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,9 +51,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2bWklSC3Ncy9Vn9JomcvilI110r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -116,8 +72,9 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "git-widget-placeholder": "CoreCPP",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/rakamal/Documents/Personal/Coding/Frameworks/SpringBoot/GradleBased/springrest"
   }
 }]]></component>
   <component name="RunManager" selected="Application.TennisPlayerSpringRestApplication">
@@ -166,6 +123,7 @@
       <set>
         <option value="jdk-11.0.22-semeru-11.0.22-4caba194b151-8ead774a" />
         <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-96c0d24d" />
+        <option value="jdk-17.0.9-corretto-17.0.9-e1d2075fd9a7-b6e52b55" />
       </set>
     </attachedChunks>
   </component>
