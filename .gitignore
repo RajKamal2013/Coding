@@ -92,6 +92,12 @@ DsAndAlgo/Java/Coding/build/tmp/compileJava/previous-compilation-data.bin
 Frameworks/SpringBoot/Hands-on-Application-Development-with-Spring-Boot-2
 
 #GoLang
+GoLang/learning/MODULE.bazel
+GoLang/learning/MODULE.bazel.lock
+GoLang/learning/bazel-bin
+GoLang/learning/bazel-learning
+GoLang/learning/bazel-out
+GoLang/learning/bazel-testlogs
 
 
 # Gradle
