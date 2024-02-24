@@ -1,0 +1,7 @@
+bazel-bin/
+bazel-cpp/
+bazel-out/
+bazel-testlogs/
+build/
+MODULE.bazel
+MODULE.bazel.lock
