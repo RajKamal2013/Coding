@@ -124,6 +124,14 @@ Python/Study
 RPC/ProtocolBuffer
 
 #Rust
+MODULE.bazel
+MODULE.bazel.lock
+Setting.md
+bazel-Rust
+bazel-bin
+bazel-out
+bazel-testlogs
+target/
 
 #Scala
 Scala/Core
@@ -185,3 +193,9 @@ gradlew.bat
 gradlew.bat
 gradlew
 gradlew
+GoLang/learning/bazel-bin
+GoLang/learning/bazel-learning
+GoLang/learning/bazel-testlogs
+GoLang/learning/MODULE.bazel
+GoLang/learning/bazel-out
+GoLang/learning/MODULE.bazel.lock
