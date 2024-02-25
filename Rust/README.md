@@ -13,6 +13,8 @@ Learning
     https://doc.rust-lang.org/book/title-page.html
 
     https://doc.rust-lang.org/book/title-page.html
+    https://doc.rust-lang.org/book/ch03-05-control-flow.html
+    Educative.io 
 
     Cargo 
         https://doc.rust-lang.org/cargo/
