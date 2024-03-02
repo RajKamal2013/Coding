@@ -1,0 +1,105 @@
+# Load all the repository rules
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+#load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+# Below rules are from "https://github.com/bazelbuild/rules_jvm_external/releases/tag/6.0"
+RULES_JVM_EXTERNAL_TAG = "6.0"
+
+RULES_JVM_EXTERNAL_SHA = "85fd6bad58ac76cc3a27c8e051e4255ff9ccd8c92ba879670d195622e7c0a9b7"
+
+http_archive(
+    name = "rules_jvm_external",
+    sha256 = RULES_JVM_EXTERNAL_SHA,
+    strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
+    url = "https://github.com/bazelbuild/rules_jvm_external/releases/download/%s/rules_jvm_external-%s.tar.gz" % (RULES_JVM_EXTERNAL_TAG, RULES_JVM_EXTERNAL_TAG),
+)
+
+load("@rules_jvm_external//:repositories.bzl", "rules_jvm_external_deps")
+
+rules_jvm_external_deps()
+
+load("@rules_jvm_external//:setup.bzl", "rules_jvm_external_setup")
+
+rules_jvm_external_setup()
+
+# Load Java Rules -> https://github.com/bazelbuild/rules_java/releases
+http_archive(
+    name = "rules_java",
+    sha256 = "976ef08b49c929741f201790e59e3807c72ad81f428c8bc953cdbeff5fed15eb",
+    urls = [
+        "https://github.com/bazelbuild/rules_java/releases/download/7.4.0/rules_java-7.4.0.tar.gz",
+    ],
+)
+
+load("@rules_java//java:repositories.bzl", "rules_java_dependencies", "rules_java_toolchains")
+
+rules_java_dependencies()
+
+rules_java_toolchains()
+
+# Bazel Contrib rule -> "https://github.com/bazel-contrib/rules_jvm/releases"
+http_archive(
+    name = "contrib_rules_jvm",
+    sha256 = "2412e22bc1eb9d3a5eae15180f304140f1aad3f8184dbd99c845fafde0964559",
+    strip_prefix = "rules_jvm-0.24.0",
+    url = "https://github.com/bazel-contrib/rules_jvm/releases/download/v0.24.0/rules_jvm-v0.24.0.tar.gz",
+)
+
+# Fetches the contrib_rules_jvm dependencies.
+# If you want to have a different version of some dependency,
+# you should fetch it *before* calling this.
+load("@contrib_rules_jvm//:repositories.bzl", "contrib_rules_jvm_deps")
+
+contrib_rules_jvm_deps()
+
+# Now ensure that the downloaded deps are properly configured
+load("@contrib_rules_jvm//:setup.bzl", "contrib_rules_jvm_setup")
+
+contrib_rules_jvm_setup()
+
+# Maven install using rules_jvm_external -> "https://github.com/bazelbuild/rules_jvm_external/releases/tag/6.0"
+# https://github.com/bazelbuild/rules_jvm_external
+load("@rules_jvm_external//:defs.bzl", "maven_install")
+
+maven_install(
+    artifacts = [
+        # below is not used
+        "junit:junit:4.13",
+        "org.apache.logging.log4j:log4j-api:2.16.0",
+        "org.apache.logging.log4j:log4j-to-slf4j:2.16.0",
+    ],
+    repositories = [
+        "https://repo1.maven.org/maven2",
+        "https://maven.google.com",
+    ],
+    #maven_install_json = "//:maven_install.json",
+)
+
+load("@maven//:defs.bzl", "pinned_maven_install")
+
+pinned_maven_install()
+
+#Links
+# Bazel : https://github.com/bazelbuild
+# Bazel Working: https://bazel.build/external/overview
+# Bazel learning: https://bazel.build/run/build
+# Using Bazel: https://docs.bazel.build/versions/0.19.1/build-ref.html
+# Bazel Overview:
+# Workspace: https://bazel.build/concepts/build-ref
+# Workspace Rules: https://docs.bazel.build/versions/0.19.1/be/workspace.html
+# Workspace Rules (HTTP): https://bazel.build/rules/lib/repo/http
+# Workspace Rules (GIT): https://bazel.build/rules/lib/repo/git
+# Workspace Rules (Utils): https://bazel.build/rules/lib/repo/utils
+# Rules JVM external: https://github.com/bazelbuild/rules_jvm_external/releases/tag/6.0
+# Rules Java:https://github.com/bazelbuild/rules_java/releases/tag/7.4.0
+# Contrib Rules Jvm : https://github.com/bazel-contrib/rules_jvm/releases
+# Maven install -> https://github.com/bazelbuild/rules_jvm_external
+# BUILD File rules -> https://bazel.build/reference/be/overview
+# BUILD File Java -> https://bazel.build/reference/be/java
+# Sample Java Setup using Bazel -> https://bazel.build/start/java
+# Migrating from Maven to Bazel -> https://bazel.build/migrate/maven
+# Bazel Skylib -> https://github.com/bazelbuild/bazel-skylib/releases
+# Java test sample: https://github.com/bazelbuild/bazel/blob/master/src/test/java/com/google/devtools/common/options/BUILD
+# Java test : https://github.com/junit-team/junit5-samples/blob/main/junit5-jupiter-starter-bazel/BUILD
+# use module instead of workspace
+# JUnit : https://github.com/junit-team

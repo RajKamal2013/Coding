@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c09ae7b-4f6e-4cf9-ab66-305d337cea8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/DsAndAlgo/DP/TargetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/CMakeListsCopy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/DP/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/DP/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/DP/CoinDenominations.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/DP/CoinDenominations.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+    <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MyUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/MyUnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DsAndAlgo/DP/Knapsack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DsAndAlgo/DP/TargetSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/DsAndAlgo/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +24,6 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -46,50 +34,74 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="2W6Pj0PGNFgNQ0hjsZFlLUAMyIN" />
+  <component name="ProjectId" id="2d0F1Sd5tpy5inqdWJVxXskQT5P" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.Build Coding.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Coding [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.MyUnitTest.testConcatenate.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;android.gradle.sync.needed&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;DsAndAlgo&quot;
+    &quot;git-widget-placeholder&quot;: &quot;Code&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/rakamal/Documents/Personal/Coding/DsAndAlgo/Java/Coding/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.DsAndAlgo.Main" />
-      <module name="Coding.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.DsAndAlgo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="MyUnitTest.testConcatenate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.example.MyUnitTest.testConcatenate&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.MyUnitTest.testConcatenate" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7c09ae7b-4f6e-4cf9-ab66-305d337cea8b" name="Changes" comment="" />
-      <created>1696050189838</created>
+      <changelist id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="" />
+      <created>1709136873849</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1696050189838</updated>
+      <updated>1709136873849</updated>
     </task>
     <servers />
   </component>
