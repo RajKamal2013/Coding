@@ -1,0 +1,11 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+exports_files([
+    "file_generator.py"
+])
+
+#py_library(
+#    name = "utils",
+#    srcs = ["file_generator.py"],
+#    imports = ["."],
+#    visibility = ["//visibility:public"],
+#)

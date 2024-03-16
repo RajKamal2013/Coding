@@ -28,6 +28,7 @@ AutoMake/CPP/autom4te.cache/requests
 .git
 .git/*
 .DS_Store
+*.pyc
 
 # Automake
 AutoMake/CPP/bin/Makefile
@@ -83,6 +84,7 @@ DsAndAlgo/Java/Coding/.idea/jarRepositories.xml
 DsAndAlgo/Java/Coding/.idea/libraries/gradle_wrapper.xml
 DsAndAlgo/Java/Coding/build/tmp/compileJava/compileTransaction/stash-dir/Knapsack.class.uniqueId0
 DsAndAlgo/Java/Coding/build/tmp/compileJava/previous-compilation-data.bin
+DsAndAlgo/Python/DS/bazel-DS
 
 
 #FileWatcher
@@ -116,6 +118,7 @@ POC/CPP
 
 #Python
 Python/health 2.conf
+*/__pycache__/
 Python/pymongo
 Python/Study
 

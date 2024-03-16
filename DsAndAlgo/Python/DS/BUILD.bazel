@@ -1,0 +1,38 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+load("@rules_python//python:defs.bzl", "py_library")
+
+py_binary(
+    name = "practice",
+    srcs = ["practice.py"],
+)
+
+py_library(
+    name = "sorting_lib",
+    srcs = [
+        "//sorting:counting_sort.py", 
+        "//sorting:heap_sort.py", 
+        "//sorting:merge_sort.py", 
+        "//sorting:quick_sort.py"],
+    imports = ["."],
+    visibility = ["//visibility:public"],
+)
+
+py_library(
+    name = "utils",
+    srcs = [
+        "//util:file_generator.py"
+        ],
+    imports = ["."],
+    visibility = ["//visibility:public"],
+)
+
+py_binary(
+    name = "sorting_test",
+    srcs = [
+        "//tests:sorting_test.py"
+        ],
+    deps = [
+        "//:sorting_lib",
+        "//:utils"
+    ]
+)
