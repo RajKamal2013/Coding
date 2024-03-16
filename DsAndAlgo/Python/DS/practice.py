@@ -1,16 +1,15 @@
-
-#Practice In Python
+# Practice In Python
 import math
 import random
 
 print("hi")
-x=5
-y=9
+x = 5
+y = 9
 z = x + y
 print(x, "+ ", y, "=", z)
 
 for i in range(5):
-    print ("Hi:", i)
+    print("Hi:", i)
 
 name = input("What is your name:")
 print("Name entered is :", name)
@@ -18,14 +17,13 @@ print("Name entered is :", name)
 b = 23
 print(bin(23), "-", oct(23), "-", hex(24))
 
-x=None
+x = None
 if x is None:
     print("Not initialized ")
 
 """ This is multi line comments
     THis is just a test 
 """
-
 
 a = [1, 9, 8]
 print(a)
@@ -35,11 +33,13 @@ print("data at index 0", a[0])
 def test(x):
     print(x)
 
+
 def banner(message, border='-'):
     line = border * len(message)
     print(line)
     print(message)
     print(line)
+
 
 banner("raj kamal ")
 
@@ -50,19 +50,21 @@ iterator = iter(iterable);
 print(next(iterator))
 print(next(iterator))
 
+
 def getiter(iterator):
     try:
         return next(iterator)
     except StopIteration:
         print("Iterator ended")
-        #raise ValueError("Iterator is empty")
+        # raise ValueError("Iterator is empty")
 
 
 list_com = [x * x for x in range(1, 10)]
 print(list_com)
 
+
 def is_prime(x):
-    if x < 2 :
+    if x < 2:
         return False
 
     for i in range(2, int(math.sqrt(x)) + 1):
@@ -71,11 +73,12 @@ def is_prime(x):
 
     return True
 
+
 filter_com = [x for x in range(1, 100) if is_prime(x)]
 print(filter_com)
 
 
-#flight -> SN060
+# flight -> SN060
 class Flight:
     def __init__(self, number):
         if not number[:2].isalpha():
@@ -96,7 +99,7 @@ class Flight:
 f = Flight("SN060")
 print(f.getNumber(), "-", f.airline())
 
-data = 947059890736/3600570880
+data = 947059890736 / 3600570880
 print("Time taken in lock :", data)
 
 
@@ -123,7 +126,7 @@ def generateInteger(count, limit, outputfile):
 
 def readRandomInteger(inputfile):
     file = open(inputfile, "r")
-    res=list();
+    res = list();
     count = 0
     print("Reading:", inputfile, " line by line")
     for line in file:
@@ -131,8 +134,6 @@ def readRandomInteger(inputfile):
 
     file.close()
     return res
-
-
 
 
 def main():
@@ -154,11 +155,10 @@ def main():
     data = getiter(iterator)
     banner(data)
     """
-    outputFile="randomIntNum.txt"
+    outputFile = "randomIntNum.txt"
     generateInteger(50, 999, outputFile)
     res = readRandomInteger(outputFile)
     print(res)
-
 
 
 main()
