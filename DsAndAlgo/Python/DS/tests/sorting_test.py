@@ -5,6 +5,7 @@ from DS.sorting.heap_sort import hsort
 from DS.sorting.merge_sort import msort
 from DS.sorting.quick_sort import qsort
 from DS.util.file_generator import IntFileGenerator
+from DS.settings import DATA_DIR
 
 def display(arr, str):
     banner = "--------------------"
@@ -16,7 +17,7 @@ def main():
     # ----------------------------- QuickSort -------------------------
     size: int = 1000
     rang: int = 600
-    Qf = IntFileGenerator(size, rang, "data/QsortInput.txt", "data/QsortOutput.txt")
+    Qf = IntFileGenerator(size, inputFileName="QsortInput.txt", outFileName="QsortOutput.txt")
     Qf.generate()
     Qarr = range(1, 50, 3)
     Qf.write(Qarr)
@@ -34,7 +35,7 @@ def main():
     # ----------------------------- MergeSort ------------------------
     size = 1000
     rang = 600
-    Mf = IntFileGenerator(size, rang, "data/MsortInput.txt", "data/MsortOutput.txt")
+    Mf = IntFileGenerator(size, rang, "MsortInput.txt", "MsortOutput.txt")
     Mf.generate()
     Marr = Mf.read()
     Marr = Marr[1:]
@@ -49,7 +50,7 @@ def main():
     # ----------------------------- Heap Sort ------------------------
     size = 1000
     rang = 600
-    Hf = IntFileGenerator(size, rang, "data/HsortInput.txt", "data/HsortOutput.txt")
+    Hf = IntFileGenerator(size, rang, "HsortInput.txt", "HsortOutput.txt")
     Hf.generate()
     Harr = Hf.read()
     Harr = Harr[1:]
@@ -64,7 +65,7 @@ def main():
     # ----------------------------- Counting Sort ------------------------
     size = 20
     rang = 20
-    Cf = IntFileGenerator(size, rang, "data/CsortInput.txt", "data/CsortOutput.txt")
+    Cf = IntFileGenerator(size, rang, "CsortInput.txt", "CsortOutput.txt")
     Cf.generate()
     Carr = Cf.read()
     Carr = Carr[1:]

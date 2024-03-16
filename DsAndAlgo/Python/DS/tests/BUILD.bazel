@@ -1,0 +1,12 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+exports_files([
+    "sorting_test.py"
+])
+#py_binary(
+#    name = "sorting_test",
+#    srcs = ["main.py"],
+#    deps = [
+#        ":sorting_lib",
+#        ":util"
+#    ]
+#)

@@ -1,4 +1,7 @@
+import os
 import random
+
+from DS.settings import DATA_DIR
 
 
 class IntFileGenerator:
@@ -18,7 +21,7 @@ class IntFileGenerator:
 
     def read(self):
         print("Collecting Data from File:", self.inputFileName, "in array")
-        file = open(self.inputFileName, "r")
+        file = open(os.path.join(DATA_DIR, self.inputFileName), "r")
         arr = list()
 
         for line in file:
@@ -27,8 +30,10 @@ class IntFileGenerator:
         return arr
 
     def generate(self):
-        print("Generating:", self.size, "Random Numbers in File:", self.inputFileName)
-        file = open(self.inputFileName, "w")
+        print("Generating:", self.size, "Random Numbers in File:", self.inputFileName, " from range:", self.range)
+        print("--- DATA DIR ---- ", DATA_DIR)
+        print("Input File Path: ", os.path.join(DATA_DIR, self.inputFileName))
+        file = open(os.path.join(DATA_DIR, self.inputFileName), "w")
         file.write(str(self.size))
         file.write("\n")
 
@@ -42,7 +47,7 @@ class IntFileGenerator:
 
     def write(self, arr):
         print("Copying data to File:", self.outputFileName)
-        file = open(self.outputFileName, "w")
+        file = open(os.path.join(DATA_DIR, self.outputFileName), "w")
 
         arrlen = len(arr)
         file.write(str(arrlen))

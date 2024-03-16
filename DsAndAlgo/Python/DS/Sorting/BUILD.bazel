@@ -1,0 +1,13 @@
+load("@rules_python//python:defs.bzl", "py_binary")
+exports_files([
+    "counting_sort.py",
+    "heap_sort.py",
+    "merge_sort.py",
+    "quick_sort.py"
+    ])
+#py_library(
+#    name = "sorting_lib",
+#    srcs = ["counting_sort.py", "heap_sort.py", "merge_sort.py", "quick_sort.py"],
+#    imports = ["."],
+#    visibility = ["//visibility:public"],
+#)
