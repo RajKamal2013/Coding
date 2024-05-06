@@ -5,6 +5,7 @@
 
 #include "BST.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int debug = false;

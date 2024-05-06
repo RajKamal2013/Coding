@@ -1,0 +1,3 @@
+common --enable_bzlmod
+common --repository_cache=
+common --distdir=

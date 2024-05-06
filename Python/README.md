@@ -16,3 +16,7 @@ Compilation
 
 Bazel
 https://github.com/bazelbuild/rules_python/releases
+
+
+Patch and Mock 
+https://realpython.com/python-mock-library/
