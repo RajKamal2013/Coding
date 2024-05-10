@@ -30,6 +30,11 @@ AutoMake/CPP/autom4te.cache/requests
 .DS_Store
 *.pyc
 
+DsAndAlgo/Java/Coding/.idea/gradle.xml
+DsAndAlgo/Java/Coding/.idea/misc.xml
+DsAndAlgo/Java/Coding/.idea/workspace.xml
+DsAndAlgo/Java/Coding/.idea/workspace.xml
+
 # Automake
 AutoMake/CPP/bin/Makefile
 AutoMake/CPP/bin/src/.deps/main.Po
