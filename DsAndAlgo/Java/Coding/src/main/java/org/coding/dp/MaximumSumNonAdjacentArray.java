@@ -1,5 +1,16 @@
 package org.coding.dp;
 
+/*
+ * Given an array and find the maximum non-adjacent sum of array elements
+ * Example: Array: [75, 105, 120, 75, 90, 135]
+ *  Answer: 330 -> [105, 75, 135]
+ *
+ */
+
+/**
+ * Class contains static method that find the maximum non-adjacent sum
+ * in an array.
+ */
 public class MaximumSumNonAdjacentArray {
     public static int solution(int[] array) {
         if (array.length == 0) {

@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/coding/dp/CoinsChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/coding/dp/CoinsChangeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/DS/dynamic_programming/coins_change.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/DS/tests/dynamic_programming/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/DS/tests/dynamic_programming/coins_change.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/TODO.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/bug.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/DP/build.Bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/DP/build.Bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/Tree/KthLargestValueInBSTTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/Tree/KthLargestValueInBSTTest.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/Tree/ReconstructBST.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/Tree/ReconstructBST.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/coding/dp/MaximumSubsetAdjacent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Python/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Python/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Python/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Python/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Python/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
