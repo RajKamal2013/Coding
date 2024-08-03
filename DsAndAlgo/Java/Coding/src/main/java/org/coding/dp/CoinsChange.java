@@ -30,6 +30,8 @@ public class CoinsChange {
         Arrays.sort(denoms);
         int numberOfWays = 0;
         // Naive Recursive Way
+
+        /*
         numberOfWays =  numberOfWaysToMakeChangeNaive(n, denoms);
         System.out.println("Recursive: Number of ways to Make change: " + numberOfWays);
 
@@ -40,6 +42,8 @@ public class CoinsChange {
         // DP: Bottoms-Up Approach (Tabulation)
         numberOfWays = numberOfWaysToMakeChangeBottomsUp(n, denoms);
         System.out.println("DP (Bottoms-Up): Number of ways to Make change: " + numberOfWays);
+        */
+         numberOfWays = numberOfWaysToMakeChangeNaive2(n, denoms);
         return numberOfWays;
     }
 
@@ -48,6 +52,27 @@ public class CoinsChange {
         int numberOfWays = 0;
         numberOfWays =  numberOfWaysToMakeChangeNaiveInt(n, denoms, denoms[denoms.length - 1]);
         return numberOfWays;
+    }
+
+    public int numberOfWaysToMakeChangeNaive2(int n, int[] denoms) {
+        int numberOfWays = 0;
+        numberOfWays =  numberOfWaysToMakeChangeNaiveInt2(n, denoms, 0);
+        return numberOfWays;
+    }
+
+    public int numberOfWaysToMakeChangeNaiveInt2(int n, int[] denoms, int idx) {
+        if (n == 0) {
+            return 1;
+        }
+        if (idx >= denoms.length) {
+            return 0;
+        }
+        int incl = 0, excl = 0;
+        if ( n >= denoms[idx]) {
+            incl = numberOfWaysToMakeChangeNaiveInt2(n - denoms[idx], denoms, idx);
+        }
+        excl = numberOfWaysToMakeChangeNaiveInt2(n, denoms, idx + 1);
+        return incl + excl;
     }
 
     /* Build on the naive way, DP top- down approach */

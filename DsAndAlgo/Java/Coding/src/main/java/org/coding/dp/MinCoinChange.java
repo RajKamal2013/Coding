@@ -25,30 +25,36 @@ public class MinCoinChange {
 
     public static int solutionDPBottomsUpInt(int n, int[] denoms, int idx,
                                              int[][]dp) {
-        if (n == 0) {
-            return 1;
+
+        if (idx == denoms.length) {
+            return  Integer.MAX_VALUE;
+
         }
+
         if (n < 0) {
             return Integer.MAX_VALUE;
+        }
+
+        if (n == 0) {
+            return 0;
         }
 
         if (dp[n][idx] != -1) {
             return dp[n][idx];
         }
 
-        int including = Integer.MAX_VALUE;
-        int excluding = Integer.MAX_VALUE;
+        int including = 0;
+        int excluding = 0;
 
-        if (n - denoms[idx] >= 0) {
-            including = solutionDPBottomsUpInt(n - denoms[idx], denoms, idx, dp);
-        }
-        if (including != Integer.MAX_VALUE) {
+        including = solutionDPBottomsUpInt(n - denoms[idx], denoms, idx, dp);
+
+        if (including == 0) {
             including = including + 1;
         }
 
-        if ((idx + 1) <= denoms.length - 1) {
-            excluding = solutionDPBottomsUpInt(n, denoms, idx + 1, dp);
-        }
+        excluding = solutionDPBottomsUpInt(n, denoms, idx + 1, dp);
+
+
         dp[n][idx] = Integer.min(excluding, including);
 
         return dp[n][idx];
@@ -67,6 +73,13 @@ public class MinCoinChange {
         for (int i = 1; i <= n ; i++) {
             Arrays.fill(dp[i], -1);
         }
+/*
+        for (int i = 0; i <denoms.length; i++) {
+            if (denoms[i] <= n) {
+                dp[denoms[i]][i] = 1;
+            }
+        }
+ */
 
         int idx = 0;
         int count = solutionDPBottomsUpInt(n, denoms, idx, dp);
@@ -86,22 +99,26 @@ public class MinCoinChange {
         }
 
         int[][] dp = new int[n + 1][denoms.length];
-        for (int i = 0; i < denoms.length; i++) {
-            if (denoms[i] <= n) {
-                dp[denoms[i]][i] = 1;
-            }
-        }
+
         int including, excluding;
         for (int i = 1; i <= n; i++) {
-            including = excluding = Integer.MAX_VALUE;
+            including = excluding = 0;
             for (int j = 0; j < denoms.length; j++) {
                 if (i - denoms[j] >= 0) {
-                    including = dp[i - denoms[j]][j];
+                    including = dp[i - denoms[j]][j] + 1;
                 }
                 if (j - 1 >= 0) {
                     excluding = dp[i][j-1];
                 }
-                dp[i][j] = Integer.min(including, excluding);
+                if ((including > 0) && (excluding > 0)) {
+                    dp[i][j] = Integer.min(including, excluding);
+                } else if ((including == 0) && (excluding == 0)) {
+                    dp[i][j] = 0;
+                } else if (including == 0) {
+                    dp[i][j] = excluding;
+                } else {
+                    dp[i][j] = including;
+                }
             }
         }
         return dp[n][denoms.length -1];
