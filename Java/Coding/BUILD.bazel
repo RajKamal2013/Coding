@@ -1,0 +1,33 @@
+load("@rules_java//java:defs.bzl", "java_library", "java_test")
+load("@rules_jvm_external//:defs.bzl", "artifact")
+load("@contrib_rules_jvm//java:defs.bzl", "JUNIT5_DEPS", "java_test_suite")
+
+java_binary(
+    name = "Main",
+    srcs = ["src/main/java/org/example/Main.java"],
+    main_class = "org.example.Main",
+    deps = [
+        ":myunit-lib",
+    ],
+)
+
+java_library(
+    name = "myunit-lib",
+    srcs = glob(
+        ["src/main/java/org/example/MyUnit.java"],
+    ),
+)
+
+java_test_suite(
+    name = "Test",
+    size = "small",
+    srcs = ["src/test/java/org/example/MyUnitTest.java"],
+    runner = "junit5",
+    test_suffixes = ["MyUnitTest.java"],
+    runtime_deps = JUNIT5_DEPS,
+    deps = [
+        ":myunit-lib",
+        artifact("org.junit.jupiter:junit-jupiter-api"),
+        artifact("org.junit.jupiter:junit-jupiter-params"),
+    ],
+)
