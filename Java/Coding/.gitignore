@@ -15,6 +15,9 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.ijwb/
+gradle
+
 
 ### Eclipse ###
 .apt_generated
