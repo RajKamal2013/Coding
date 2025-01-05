@@ -12,6 +12,7 @@ public class App {
     public static Observable<User> getUsersWithBlog(List<User> users) {
         Observable<User> usersWithBlog = Observable.fromIterable(users)
                 .filter(user->user.hasBlog())
+
                 .subscribeOn(Schedulers.io());
         return usersWithBlog;
     }
