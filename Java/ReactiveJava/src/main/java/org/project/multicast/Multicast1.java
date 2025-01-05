@@ -40,7 +40,11 @@ public class Multicast1 {
         // Connect the Observable to initiate data flow
         connectableObservable.connect();
 
+        //Observable<Integer> ints2 = Observable.range(10, 20);
+       // ints.mergeWith(ints2);
+       // ints.notifyAll();
     }
+
 
     public static void main(String[] args) {
         Multicast1 multicast = new Multicast1();

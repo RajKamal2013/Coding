@@ -1,12 +1,15 @@
 package org.project.functional;
 
+import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
 
+import java.util.function.BiPredicate;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Basic {
 
@@ -42,8 +45,41 @@ public class Basic {
         System.out.println("Filtered LIST: " + filteredList.toString() );
     }
 
+    public static void defaultFunctionalMethods() {
+        List<String> nameString = new ArrayList<>();
+        nameString.add("HI");
+        nameString.add("Hello");
+        nameString.add("Yes");
+        nameString.add("No");
+        nameString.add("Excuse");
+        nameString.add("Print");
+        nameString.add("Delete");
+        nameString.add("Updated");
+        nameString.add("Database");
+        nameString.add("Os");
+        nameString.add("Apple");
+        nameString.add("Linux");
+        nameString.add("Windows");
+
+        BiPredicate<Integer, Integer> greaterThanVar = (item, var) -> item > var;
+        int fixedVar = 6;
+        List<Integer> intList = nameString.stream()
+                .map(item -> item.length())
+                .filter(item-> greaterThanVar.test(item,fixedVar))
+                .collect(Collectors.toList());
+
+         Stream<String> updatedStream = nameString.stream()
+                 .filter(item-> item.length()>5)
+                 .map(item->item.toUpperCase());
+
+         updatedStream.forEach(System.out::println);
+        for (int item: intList) {
+            System.out.println("Item: " + item);
+        }
+    }
     public static void main(String[] args) {
-        Basic basic = new Basic();
-        basic.testBasicMap();
+        //Basic basic = new Basic();
+        //basic.testBasicMap();
+        defaultFunctionalMethods();
     }
 }
