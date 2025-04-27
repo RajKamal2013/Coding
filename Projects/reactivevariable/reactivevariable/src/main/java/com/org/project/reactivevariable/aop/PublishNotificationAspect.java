@@ -14,7 +14,7 @@ public class PublishNotificationAspect {
     //@Before("execution(* com.org.project.reactivevariable.service.*.*(..))")
     //@Before("execution(* com.org.project.reactivevariable.service.*.*(..))")
     //@Before("execution(* com.org.project.reactivevariable.construct.*.*(..))")
-   // @After("JoinPointConfig.publishNotificationPointcut()")
+    //@After("JoinPointConfig.publishNotificationPointcut()")
     @After("@annotation(com.org.project.reactivevariable.aop.PublishNotification) &&" +
             "args(arg1, arg2)")
     public void PublishNotification(JoinPoint joinPoint, ReactiveVariable arg1, Object arg2) {

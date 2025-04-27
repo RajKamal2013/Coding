@@ -40,6 +40,7 @@ public class VirtualThreadsIntro {
     public static void main(String[] args) throws InterruptedException {
         System.out.println(" Starting main thread " + Thread.currentThread());
         virtualThreads();
+        //platformThreads();
         System.out.println(" Ending main thread " + Thread.currentThread());
     }
 }
