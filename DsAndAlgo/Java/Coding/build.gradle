@@ -13,7 +13,7 @@ dependencies {
 }
 
 application {
-    mainClass = "org.example.Main"
+    mainClassName = project.findProperty("chooseMain").toString()
 }
 
 
