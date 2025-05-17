@@ -30,14 +30,6 @@ cmake -S . -B build
 cmake --build build 
 ```
 
-## New way 
-mkdir build
-cd build
-cmake ..
-make
-
-```
-
 ## Testing 
 ```
 cd build/src/DP/

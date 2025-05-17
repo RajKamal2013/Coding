@@ -1,6 +1,6 @@
 #include <limits.h>
 #include <gtest/gtest.h>
-#include "src/code/unit_test/sample2.h"
+#include "src/main/unit_test/sample2.h"
 
 const char kHelloString[] = "Hello, world!";
 
