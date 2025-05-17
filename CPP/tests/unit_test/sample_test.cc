@@ -1,6 +1,6 @@
 #include <limits.h>
 #include <gtest/gtest.h>
-#include "src/main/unit_test/sample1.h"
+#include "src/code/unit_test/sample1.h"
 
 TEST(FactorialTest, Negative) {
   // This test is named "Negative", and belongs to the "FactorialTest"

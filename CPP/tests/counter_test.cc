@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "src/main/misc/counter.h"
+#include "src/code/misc/counter.h"
 
 TEST(Counter, Increment) {
   Counter c;
