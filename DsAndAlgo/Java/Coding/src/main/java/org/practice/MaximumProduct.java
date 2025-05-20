@@ -92,4 +92,28 @@ public class MaximumProduct {
             throw e;
         }
     }
+
+    /** Optimal solution */
+    int maxProduct2(int n) {
+        int d1 = 0, d2 = 0, max = 0;
+        d1 = n % 10;
+        n =  n/10;
+        d2 = n % 10;
+        n = n/10;
+        int temp;
+        while(n > 0) {
+            temp = n %10;
+            if ((temp > d1) && (d1 < d2)) {
+                d1 = temp;
+                n = n/10;
+                continue;
+            }
+
+            if (temp > d2) {
+                d2 = temp;
+            }
+            n = n/10;
+        }
+        return d1 * d2;
+    }
 }

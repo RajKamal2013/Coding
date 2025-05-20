@@ -4,9 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (maximum product)">
+      <change afterPath="$PROJECT_DIR$/../../CPP/include/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/include/practice/MaximumProduct.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/MaximumProduct.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/test/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/MaximumProductTests.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CPP/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CPP/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/MaximumProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/practice/MaximumProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/practice/MaximumProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/practice/MaximumProductTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +69,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/RajKamal2013/Coding.git&quot;,
-    &quot;accountId&quot;: &quot;dc4c4fb1-40d3-4d70-9aa1-e02d7bffda53&quot;
+    &quot;accountId&quot;: &quot;9fbd4700-b20d-4eff-9e79-a12b97d01914&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -70,6 +82,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2d0F1Sd5tpy5inqdWJVxXskQT5P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
@@ -81,18 +96,21 @@
     "Gradle.Build Coding.executor": "Run",
     "Gradle.Coding [:Main.main()].executor": "Run",
     "Gradle.Coding [:org.example.Main.main()].executor": "Run",
+    "Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor": "Run",
+    "Gradle.MaximumProductTest.executor": "Run",
     "Gradle.MyUnitTest.executor": "Run",
     "Gradle.MyUnitTest.testConcatenate.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "CoreJava",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "DsAndAlgo",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/raj-kamal/Documents/git/Coding/Java/Coding",
     "onboarding.tips.debug.path": "/Users/rakamal/Documents/Personal/Coding/DsAndAlgo/Java/Coding/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "inlay.hints"
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Coding.main" />
@@ -105,6 +123,54 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="MaximumProductTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.practice.MaximumProductTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.practice.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="MyUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -156,6 +222,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException" />
+        <item itemvalue="Gradle.MaximumProductTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.MyUnitTest" />
         <item itemvalue="Gradle.MyUnitTest.testConcatenate" />
@@ -171,6 +239,30 @@
       <option name="presentableId" value="Default" />
       <updated>1709136873849</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added code to practice (maximum product)">
+      <option name="closed" value="true" />
+      <created>1747472621883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747472621883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added code to practice (maximum product)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to practice (maximum product)" />
   </component>
 </project>

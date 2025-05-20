@@ -61,6 +61,13 @@ class MaximumProductTest {
         assertEquals(expected, maximumProduct.maxProduct(input));
     }
 
+    // Parameterized test for maximum product calculation
+    @ParameterizedTest
+    @MethodSource("provideTestCasesForMaxProduct")
+    void calculateMaxProductOptimal_ValidInput_ReturnsExpectedResult(int input, int expected) {
+        assertEquals(expected, maximumProduct.maxProduct2(input));
+    }
+
     // Test data provider for maximum product calculations
     private static Stream<Arguments> provideTestCasesForMaxProduct() {
         return Stream.of(
