@@ -26,6 +26,30 @@ class ValidParenthesis(object):
         else:
             return False
 
+    @staticmethod
+    def isValid3(s: str) -> bool:
+        """
+              type s: str
+              rtype: bool
+              """
+        st: list[str] = []
+        for ch in s:
+            if ch in '({[':
+                st.append(ch)
+            elif ch in ')}]':
+                if not st:
+                    return False
+                c = st.pop()
+                if ch == ')' and c != '(':
+                    return False
+                elif ch == '}' and c != '{':
+                    return False
+                elif ch == ']' and c != '[':
+                    return False
+            else:
+                return False
+        return len(st) == 0
+
 
 
 

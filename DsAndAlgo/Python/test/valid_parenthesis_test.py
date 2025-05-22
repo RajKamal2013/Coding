@@ -11,6 +11,8 @@ class ValidParenthesisTest(unittest.TestCase):
         self.assertFalse(ValidParenthesis.isValid(s))  # add assertion here
         s = "[[[((]])])"
         self.assertTrue(ValidParenthesis.isValid(s))
+        s = '([)]'
+        self.assertFalse(ValidParenthesis.isValid3(s))
 
 
 if __name__ == '__main__':
