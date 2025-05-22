@@ -25,6 +25,34 @@ class ValidParenthesis(object):
             return True
         else:
             return False
+        
+        
+    @staticmethod
+    def isValid2(s: str) -> bool:
+        """
+        type s: str
+        rtype: bool
+        """
+        bracket =  middle_bracket = close_bracket = invalid = 0
+        for ch in s:
+            if ch =='(':
+                    bracket = bracket + 1
+            elif ch == ')':
+                bracket = bracket  - 1
+            elif ch == '{':
+                middle_bracket = middle_bracket + 1
+            elif ch == '}':
+                    middle_bracket = middle_bracket - 1
+            elif ch == '[':
+                    close_bracket = close_bracket + 1
+            elif ch == ']':
+                    close_bracket = close_bracket - 1
+            else:
+                invalid = invalid + 1
+        if (bracket == 0 ) and (middle_bracket == 0) and (close_bracket == 0) and (invalid == 0):
+            return True
+        else:
+            return False
 
     @staticmethod
     def isValid3(s: str) -> bool:

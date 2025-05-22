@@ -12,6 +12,12 @@ dependencies {
     implementation("com.google.guava:guava:32.1.1-jre")
 }
 
+/*
+application {
+    mainClassName = project.findProperty("chooseMain").toString()
+}
+*/
+
 application {
     mainClassName = project.findProperty("chooseMain").toString()
 }
