@@ -1,7 +1,7 @@
 import os
 import random
 
-from DS.settings import DATA_DIR
+from src.DS.settings import DATA_DIR
 
 
 class IntFileGenerator:

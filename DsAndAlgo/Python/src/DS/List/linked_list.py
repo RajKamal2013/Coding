@@ -1,4 +1,4 @@
-from DS.list.node import Node
+from src.DS import Node
 
 
 class LinkedList:

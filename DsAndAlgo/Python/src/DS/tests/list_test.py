@@ -1,4 +1,4 @@
-from DS.list.linked_list import LinkedList
+from src.DS import LinkedList
 
 
 def LinkedListTest():

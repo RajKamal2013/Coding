@@ -1,11 +1,11 @@
 import time
 
-from DS.sorting.counting_sort import csort
-from DS.sorting.heap_sort import hsort
-from DS.sorting.merge_sort import msort
-from DS.sorting.quick_sort import qsort
-from DS.util.file_generator import IntFileGenerator
-from DS.settings import DATA_DIR
+from src.DS import csort
+from src.DS import hsort
+from src.DS import msort
+from src.DS import qsort
+from src.DS import IntFileGenerator
+
 
 def display(arr, str):
     banner = "--------------------"
