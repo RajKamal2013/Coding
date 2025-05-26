@@ -13,7 +13,6 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_OSX_ARCHITECTURES "arm64")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
 #set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 #include_directories(/opt/homebrew/include)
 #link_directories(/opt/homebrew/lib)
@@ -29,6 +28,7 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   #set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/")
   # Default macos Clang
   #set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
 endif()
 
 

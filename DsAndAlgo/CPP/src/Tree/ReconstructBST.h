@@ -4,33 +4,22 @@
  */
 
 #include "BST.h"
+#include <vector>
 #include <iostream>
+#include <climits>
 using namespace std;
 
-int debug = false;
-
-BST *reconstructBst_int(vector<int> arr, int &startIdx, int endIdx, int upperBound, int lowerBound)
+BST *reconstructBst_int(const vector<int>& arr, int &startIdx, int endIdx, int upperBound, int lowerBound)
 {
     if (startIdx > endIdx)
     {
-        if (debug)
-        {
-            cout << __FILE__ << ":" << __LINE__ << "reconstructBst_int(): Return Iteration completed" << endl;
-        }
+        // Return nullptr when we've processed all nodes
         return nullptr;
-    }
-    if (debug)
-    {
-        cout << __FILE__ << ":" << __LINE__ << "reconstructBst_int(): Next Element to enter:" << arr[startIdx] << endl;
     }
 
     BST *node = new BST(arr[startIdx]);
     cout << "Creating Node with " << arr[startIdx] << endl;
     startIdx = startIdx + 1;
-    if (debug)
-    {
-        cout << "Node Created:" << node->value << endl;
-    }
 
     if (arr[startIdx] < node->value)
     {
@@ -45,14 +34,10 @@ BST *reconstructBst_int(vector<int> arr, int &startIdx, int endIdx, int upperBou
         }
     }
     
-    if (debug)
-    {
-        cout << "Node Entering Complete:" << node->value << endl;
-    }
     return node;
 }
 
-BST *reconstructBst(vector<int> preOrderTraversalValues)
+BST *reconstructBst(const vector<int>& preOrderTraversalValues)
 {
     if (preOrderTraversalValues.size() == 0)
     {

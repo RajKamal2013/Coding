@@ -9,6 +9,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 using namespace std;
 
 vector<char> longestCommonSubsequence(string str1, string str2) {
@@ -16,21 +17,21 @@ vector<char> longestCommonSubsequence(string str1, string str2) {
     return {};
   }
   
-  int n = str1.length() + 1;
-  int m = str2.length() + 1;
+  size_t n = str1.length() + 1;
+  size_t m = str2.length() + 1;
   vector<vector<int>> L(n, vector<int>(m, 0));
   vector<vector<char>> C(n, vector<char>(m, 'N'));
   bool debug = false;
   
-  for (int i = 1; i < n; i++) {
-    for (int j = 1; j < m; j++) {
+  for (size_t i = 1; i < n; i++) {
+    for (size_t j = 1; j < m; j++) {
         if (str1[i-1] == str2[j-1]) {
             bool alreadyFound = false;
             if (i == j){
                 L[i][j]  = L[i-1][j-1] + 1;
                 C[i][j] = 'D';
             } else if (i < j) {
-                for (int z = i-2; z >= 0; z--) {
+                for (int z = static_cast<int>(i)-2; z >= 0; z--) {
                     if (str1[z] == str2[j-1]) {
                         alreadyFound = true;
                         break;
@@ -45,7 +46,7 @@ vector<char> longestCommonSubsequence(string str1, string str2) {
                 }
                 
             } else {
-                for (int z = j -2; z >= 0; z--) {
+                for (int z = static_cast<int>(j)-2; z >= 0; z--) {
                     if (str1[i-1] == str2[z]) {
                         alreadyFound = true;
                         break;
@@ -81,7 +82,7 @@ vector<char> longestCommonSubsequence(string str1, string str2) {
         cout << endl;
     }
   }
-  int i, j;
+  size_t i, j;
   i = n - 1;
   j = m - 1;
   vector<char> res;
@@ -117,7 +118,7 @@ vector<char> longestCommonSubsequence(string str1, string str2) {
                 cout << " Str2: " << j << " " << str2[j-1] << endl;
 
    }
-   if ((i-1 >= 0) && (j-1 >= 0) && (str1[i-1] == str2[j-1])) {
+   if ((i > 0) && (j > 0) && (str1[i-1] == str2[j-1])) {
     res.push_back(str1[i-1]);
   }
   reverse(res.begin(), res.end());

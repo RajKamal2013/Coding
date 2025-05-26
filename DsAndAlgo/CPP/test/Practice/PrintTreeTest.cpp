@@ -9,9 +9,10 @@ protected:
     TreeNode* root = nullptr;
 
     void SetUp() override {
-        // Build tree:   1
-        //             /   \
-        //            2     3
+        /* Build tree:   1
+         *             /   \
+         *            2     3
+         */
         root = new TreeNode(1);
         root->left = new TreeNode(2);
         root->right = new TreeNode(3);

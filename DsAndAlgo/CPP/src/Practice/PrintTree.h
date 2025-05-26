@@ -25,16 +25,16 @@ public:
         while (i < arr_size) {
             TreeNode* current = q.front();
             q.pop();
-            if (i < arr_size && array[i] != -1) {
+            if (&(array[i]) != nullptr) {
                 current->left = new TreeNode(array[i]);
                 q.push(current->left);
-                i = i + 1;
             }
-            if (i < arr_size && array[i] != -1) {
+            i = i + 1;
+            if (i < arr_size && &(array[i]) != nullptr) {
                 current->right = new TreeNode(array[i]);
                 q.push(current->right);
-                i = i+ 1;
             }
+            i = i + 1;
         }
         return root;
 

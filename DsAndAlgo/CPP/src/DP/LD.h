@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+#include <climits>
 
 using namespace std;
 
@@ -40,7 +41,7 @@ int LevenshteinDistance(string str1, string str2) {
       return str1.length();
     }
     
-    int LD[m+1][n+1];
+    vector<vector<int>> LD(m+1, vector<int>(n+1));
 
     for (int i = 0; i <= m; i++) {
       LD[i][0] = i;
@@ -88,8 +89,8 @@ int m = str1.length();
     return str1.length();
   }
 
-  int LD[m][n];
-  int subset[m];
+  vector<vector<int>> LD(m, vector<int>(n));
+  vector<int> subset(m);
   int a, b, c, l;
 
   for (int i = 0; i < m; i++) {
@@ -144,7 +145,7 @@ int m = str1.length();
         if (str1[i] != str2[j]) {
             LD[i][j] = LD[i][j] + 1;
         } else {
-            if ((i == 0) && (subset[i-1] == -1)) {
+            if (i == 0) {
               subset[i] = j;
             }
             if (subset[i] == -1){

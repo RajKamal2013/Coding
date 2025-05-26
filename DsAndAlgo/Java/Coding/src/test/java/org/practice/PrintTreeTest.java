@@ -16,7 +16,7 @@ public class PrintTreeTest {
 
     @BeforeEach
     void setUp() {
-        printTree = new PrintTree();
+        //printTree = new PrintTree();
     }
 
     @Test
@@ -42,6 +42,7 @@ public class PrintTreeTest {
     @Test
     void testPrintTreeWithMultipleLevels() {
         TreeNode root = PrintTree.createTree(Arrays.asList(1, 2, 3, 4, 5, null, 6));
+        PrintTree.printLevelOrder(root);
         List<List<String>> result = PrintTree.printTree(root);
         assertEquals(3, result.size(), "Expected three levels in the tree");
         assertEquals("1", result.get(0).get(3), "The root node should be correctly placed at the center");

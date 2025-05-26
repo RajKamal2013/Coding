@@ -9,9 +9,9 @@
  * arr[0] - arr[2] - arr[4] - arr[6] - arr[10]
  */
 
-
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
+#include <climits>
 using namespace std;
 
 int minNumberOfJumps(vector<int> array) {
@@ -23,45 +23,48 @@ int minNumberOfJumps(vector<int> array) {
     return 0;
   }
 
-  // if startting element is 0 then we can't proceed. 
+  // if starting element is 0 then we can't proceed. 
   if (array[0] == 0) {
     return -1;
   }
   vector<int> MinJumps(array.size(), INT_MAX);
   int temp;
   MinJumps[0] = 0;
-    if (debug) {
-        cout << "After working on array[0]->" << array[0] << endl;
+  
+  if (debug) {
+    cout << "After working on array[0]->" << array[0] << endl;
+    for (auto data: MinJumps) {
+      cout << data << " ";
+    }
+    cout << endl;
+  }
+
+  for (size_t i = 0; i < array.size(); i++) {
+    if (array[i] <= 0) {
+      continue;
+    } else {
+      for (size_t j = 1; j <= static_cast<size_t>(array[i]); j++) {
+        temp = MinJumps[i] + 1;
+        // Check if i + j would overflow
+        if (j > array.size() - i - 1) {
+          break;
+        }
+        if (MinJumps[i + j] > temp) {
+          MinJumps[i + j] = temp;
+        }
+      }
+      if (debug) {
+        cout << "After working on array[" << i << "]->" << array[i] << endl;
         for (auto data: MinJumps) {
-            cout << data << " ";
+          cout << data << " ";
         }
         cout << endl;
-    }
-  for (int i = 0; i < array.size(); i++) {
-     if (array[i] <= 0) {
-        continue;
-     } else {
-        for (int j = 1; j <= array[i]; j++) {
-            temp = MinJumps[i] + 1;
-            if ((i + j < array.size()) && (MinJumps[i + j] > temp)) {
-                MinJumps[i + j] = temp;
-            }
-        }
-        if (debug) {
-            cout << "After working on array[" << i << "]->" << array[i] <<  endl;
-            for (auto data: MinJumps) {
-                cout << data << " ";
-            }
-            cout << endl;
-        }
+      }
     }
   }
 
-  if (MinJumps[array.size() -1] == INT_MAX) {
+  if (MinJumps[array.size() - 1] == INT_MAX) {
     return -1;
-  } else {
-    return MinJumps[array.size() -1];
   }
+  return MinJumps[array.size() - 1];
 }
-
-

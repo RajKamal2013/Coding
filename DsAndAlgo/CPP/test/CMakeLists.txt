@@ -42,7 +42,7 @@ target_link_libraries(unit_tests
 #    RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 #)
 add_executable(maximum_product_tests
-        practice/MaximumProductTests.cpp
+        Practice/MaximumProductTests.cpp
 )
 target_link_libraries(maximum_product_tests
         PRIVATE
@@ -57,7 +57,7 @@ target_include_directories(maximum_product_tests
 )
 
 add_executable(PrintTreeTests
-        practice/PrintTreeTest.cpp
+        Practice/PrintTreeTest.cpp
 )
 
 target_link_libraries(PrintTreeTests
