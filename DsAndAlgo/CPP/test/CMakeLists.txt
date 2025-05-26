@@ -56,6 +56,22 @@ target_include_directories(maximum_product_tests
         ${CMAKE_SOURCE_DIR}/include
 )
 
+add_executable(PrintTreeTests
+        practice/PrintTreeTest.cpp
+)
+
+target_link_libraries(PrintTreeTests
+        PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Practice
+)
+
+target_include_directories(PrintTreeTests
+        PRIVATE
+        ${CMAKE_SOURCE_DIR}/include
+)
+
 
 # Link libraries
 #target_link_libraries(unit_tests

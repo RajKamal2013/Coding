@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (maximum product)">
-      <change afterPath="$PROJECT_DIR$/../../CPP/include/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/include/practice/MaximumProduct.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/MaximumProduct.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/test/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/MaximumProductTests.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/MaximumProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/practice/MaximumProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/practice/MaximumProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/practice/MaximumProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/include/practice/PrintTree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/include/practice/TreeNode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/PrintTree.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/PrintTreeTest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/practice/PrintTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/practice/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/practice/PrintTreeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/src/Practice/src/print_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/src/Practice/src/tree_node.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Python/test/print_tree_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CPP/src/Practice/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/Practice/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +97,9 @@
     "Gradle.MaximumProductTest.executor": "Run",
     "Gradle.MyUnitTest.executor": "Run",
     "Gradle.MyUnitTest.testConcatenate.executor": "Run",
+    "Gradle.PrintTreeTest.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeTest.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -110,20 +110,7 @@
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="Coding.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.PrintTreeTest.testPrintTreeTest">
     <configuration name="MaximumProductTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,7 +159,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MyUnitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PrintTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -185,7 +172,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.MyUnitTest&quot;" />
+            <option value="&quot;org.practice.PrintTreeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -196,7 +183,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MyUnitTest.testConcatenate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PrintTreeTest.testPrintTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -209,7 +196,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.example.MyUnitTest.testConcatenate&quot;" />
+            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrintTreeTest.testPrintTreeWithMultipleLevels" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeWithMultipleLevels&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -222,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeTest" />
+        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels" />
+        <item itemvalue="Gradle.PrintTreeTest" />
         <item itemvalue="Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException" />
         <item itemvalue="Gradle.MaximumProductTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.MyUnitTest" />
-        <item itemvalue="Gradle.MyUnitTest.testConcatenate" />
       </list>
     </recent_temporary>
   </component>
