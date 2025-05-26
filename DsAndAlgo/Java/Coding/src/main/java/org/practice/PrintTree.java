@@ -17,14 +17,16 @@ public class PrintTree {
         i = 1;
         while (i < arr.size()) {
             TreeNode node = queue.poll();
-            if (i < arr.size() && arr.get(i) != null) {
+            if (arr.get(i) != null) {
                 node.left = new TreeNode(arr.get(i));
                 queue.add(node.left);
-                i = i + 1;
             }
-            if (i < arr.size() && arr.get(i) != null) {
-                node.right = new TreeNode(arr.get(i));
-                queue.add(node.right);
+            i = i + 1;
+            if (i < arr.size()) {
+                if (arr.get(i) != null) {
+                    node.right = new TreeNode(arr.get(i));
+                    queue.add(node.right);
+                }
                 i = i + 1;
             }
         }
@@ -111,13 +113,13 @@ public class PrintTree {
             return matrix;
         }
         int height = getHeight(root);
-        int col = (int) (Math.pow(2, height) - 1);
+        int col = (1 << height) - 1;
         List<List<String>> matrix = new ArrayList<>();
-        String defaultValue = " ";
+        String defaultValue = "";
         for (int i = 0; i < height; i++) {
             List<String> row = new ArrayList<>();
-            for (int j = 0; j < col; j ++) {
-                row.set(j, defaultValue);
+            for (int j = 0; j < col; j++) {
+                row.add(defaultValue);
             }
             matrix.add(row);
         }
