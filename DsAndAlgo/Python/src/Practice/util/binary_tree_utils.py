@@ -1,22 +1,9 @@
-##
-# Leet Code problem : 655
-# Print Binary Tree
-# Given the root of a binary tree, construct a 0-indexed m x n string matrix res that represents a formatted layout of the tree. The formatted layout matrix should be constructed using the following rules:
-#
-# The height of the tree is height and the number of rows m should be equal to height + 1.
-# The number of columns n should be equal to 2height+1 - 1.
-# Place the root node in the middle of the top row (more formally, at location res[0][(n-1)/2]).
-# For each node that has been placed in the matrix at position res[r][c], place its left child at res[r+1][c-2height-r-1] and its right child at res[r+1][c+2height-r-1].
-# Continue this process until all the nodes in the tree have been placed.
-# Any empty cells should contain the empty string "".
-
 from collections import deque
 
 from src.Practice.ds.tree_node import TreeNode
 
 
-class PrintTree:
-
+class BinaryTreeUtils:
     @staticmethod
     def create_tree(arr) -> TreeNode | None:
         if len(arr) == 0:
@@ -41,41 +28,48 @@ class PrintTree:
     @staticmethod
     def level_order_print(root):
         if root is None:
-            return
+            return []
         queue = deque()
         queue.append(root)
+        list = []
         while queue:
             level_size = len(queue)
             for _ in range(level_size):
                 node = queue.popleft()
-                print(node.val, end=" ")
-                if node.left:
-                    queue.append(node.left)
-                if node.right:
-                    queue.append(node.right)
+                if node is None:
+                    #print("null", end = " ")
+                    list.append("null")
+                    continue
+                #print(node.val, end=" ")
+                list.append(node.val)
+                if node.left is None and node.right is None:
+                    continue
+                queue.append(node.left)
+                queue.append(node.right)
+        return list
+
 
     @staticmethod
     def get_height(node):
         if node is None:
             return 0
-        return max(PrintTree.get_height(node.left), PrintTree.get_height(node.right)) + 1
+        return max(BinaryTreeUtils.get_height(node.left), BinaryTreeUtils.get_height(node.right)) + 1
 
     @staticmethod
     def inorder_print(root):
         if root is None:
             return
-        PrintTree.inorder_print(root.left)
+        BinaryTreeUtils.inorder_print(root.left)
         print(root.val, end=" ")
-        PrintTree.inorder_print(root.right)
+        BinaryTreeUtils.inorder_print(root.right)
 
     @staticmethod
     def preorder_print(root):
         if root is None:
             return
         print(root.val, end=" ")
-        PrintTree.preorder_print(root.left)
-        PrintTree.preorder_print(root.right)
-
+        BinaryTreeUtils.preorder_print(root.left)
+        BinaryTreeUtils.preorder_print(root.right)
 
     @staticmethod
     def create_row(node: TreeNode, height: int, row: int, column: int, matrix: list[list[str]]):
@@ -85,15 +79,15 @@ class PrintTree:
             r = row + 1
             c = column - 2 ** (height - row)
             matrix[r][c] = str(node.left.val)
-            PrintTree.create_row(node.left, height, r, c, matrix)
+            BinaryTreeUtils.create_row(node.left, height, r, c, matrix)
         if node.right is not None:
             r = row + 1
             c = column + 2 ** (height - row)
             matrix[r][c] = str(node.right.val)
-            PrintTree.create_row(node.right, height, r, c, matrix)
+            BinaryTreeUtils.create_row(node.right, height, r, c, matrix)
 
     @staticmethod
-    def print_tree(root) -> list[list[str]]:
+    def print_tree_util(root) -> list[list[str]]:
         def height(node):
             if node is None:
                 return 0
@@ -104,7 +98,7 @@ class PrintTree:
                 return
             mid = (right + left) // 2
             tree_matrix[r][mid] = str(node.val)
-            #print(tree_matrix)
+            # print(tree_matrix)
             if node.left is not None:
                 update_matrix(node.left, r + 1, left, mid - 1)
             if node.right is not None:
@@ -124,3 +118,14 @@ class PrintTree:
         tree_matrix: list[list[str]] = [[default_value for _ in range(col)] for _ in range(row)]
         update_matrix(root, 0, 0, col - 1)
         return tree_matrix
+
+    @staticmethod
+    def print_tree(root:TreeNode):
+        tree_matrix = BinaryTreeUtils.print_tree_util(root)
+        for i in range(len(tree_matrix)):
+            print(tree_matrix[i])
+            print()
+        print("----- Level order of the tree--------")
+        print()
+        print(BinaryTreeUtils.level_order_print(root))
+        print()
