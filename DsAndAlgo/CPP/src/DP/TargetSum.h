@@ -83,7 +83,7 @@ int FindTargetSumWays(std::vector<int> &arr, int T) {
     row.push_back(-1 * arr[0]);
     dp.push_back(row);
 
-    for (int idx = 1; idx < arr.size(); idx++) {
+    for (std::size_t idx = 1; idx < arr.size(); idx++) {
         row.clear();
         for (int prevSum: dp[idx-1]){
             currVal = arr[idx] + prevSum;

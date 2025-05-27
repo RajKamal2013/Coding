@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (maximum product)">
-      <change afterPath="$PROJECT_DIR$/../../CPP/include/practice/PrintTree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/include/practice/TreeNode.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/src/Practice/PrintTree.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/PrintTreeTest.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/practice/PrintTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/practice/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/practice/PrintTreeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/src/Practice/src/print_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/src/Practice/src/tree_node.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Python/test/print_tree_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/Practice/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/Practice/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +29,11 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Coding" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Coding" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -100,6 +95,8 @@
     "Gradle.PrintTreeTest.executor": "Run",
     "Gradle.PrintTreeTest.testPrintTreeTest.executor": "Run",
     "Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeWithNullRoot.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeWithSingleNode.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -111,54 +108,6 @@
   }
 }]]></component>
   <component name="RunManager" selected="Gradle.PrintTreeTest.testPrintTreeTest">
-    <configuration name="MaximumProductTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.practice.MaximumProductTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.practice.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="PrintTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -231,13 +180,61 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PrintTreeTest.testPrintTreeWithNullRoot" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeWithNullRoot&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrintTreeTest.testPrintTreeWithSingleNode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeWithSingleNode&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PrintTreeTest.testPrintTreeTest" />
         <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels" />
+        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithSingleNode" />
         <item itemvalue="Gradle.PrintTreeTest" />
-        <item itemvalue="Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException" />
-        <item itemvalue="Gradle.MaximumProductTest" />
+        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithNullRoot" />
       </list>
     </recent_temporary>
   </component>

@@ -35,7 +35,7 @@ int maxSubsetSumNoAdjacent(vector<int> array) {
   sumArray[1] = max(array[0], array[1]);
   sumArray[2] = max (array[0] + array[2], array[1]);
 
-  for (int i = 3; i < sumArray.size(); i++) {
+  for (std::size_t i = 3; i < sumArray.size(); i++) {
     sumArray[i] = max((sumArray[i-2] + array[i]),
                        sumArray[i-1]);
   }

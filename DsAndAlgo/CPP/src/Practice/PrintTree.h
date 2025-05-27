@@ -10,6 +10,12 @@
 
 class PrintTree {
 public:
+    /**
+     * Creates a binary tree from an array representation.
+     * Uses level order traversal to construct the tree.
+     * @param array Vector of integers where -1 represents null nodes
+     * @return Root node of the created tree
+     */
     static TreeNode *CreateTree(std::vector<int> array) {
         if (array.empty()) {
             return nullptr;
@@ -25,12 +31,12 @@ public:
         while (i < arr_size) {
             TreeNode* current = q.front();
             q.pop();
-            if (&(array[i]) != nullptr) {
+            if (array[i] != -1) {
                 current->left = new TreeNode(array[i]);
                 q.push(current->left);
             }
             i = i + 1;
-            if (i < arr_size && &(array[i]) != nullptr) {
+            if (i < arr_size && array[i] != -1) {
                 current->right = new TreeNode(array[i]);
                 q.push(current->right);
             }
