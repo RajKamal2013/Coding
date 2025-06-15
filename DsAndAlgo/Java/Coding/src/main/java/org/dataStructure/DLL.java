@@ -1,4 +1,4 @@
-package DS;
+package org.dataStructure;
 
 public class DLL<T> {
     private ListNode<T> head;

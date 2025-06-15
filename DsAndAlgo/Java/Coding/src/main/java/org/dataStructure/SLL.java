@@ -1,8 +1,4 @@
-package DS;
-
-import javax.management.ListenerNotFoundException;
-import java.util.List;
-import java.util.SplittableRandom;
+package org.dataStructure;
 
 /*
  * Constructor -> normal constructor, copy constructor

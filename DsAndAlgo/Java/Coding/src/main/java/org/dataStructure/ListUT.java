@@ -1,4 +1,4 @@
-package DS;
+package org.dataStructure;
 
 import java.util.PrimitiveIterator;
 import java.util.stream.IntStream;

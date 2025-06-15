@@ -1,7 +1,5 @@
 package DS.DList;
 
-import DS.globals;
-
 public class DListTest {
     private List<Integer> L1;
     private List<Integer> L2;

@@ -8,7 +8,7 @@ Running
 Using Bazel
 ```
     bazelisk build //...
-    bazelisk build //:Main 
+    bazelisk build //:org.dataStructure.Main 
 ```
 
 Using Gradle
