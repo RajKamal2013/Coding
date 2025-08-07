@@ -1,26 +1,54 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.31)
 
 project (Coding LANGUAGES CXX)
 
-project(
-  Coding
-  VERSION 0.1
-  DESCRIPTION "An example project with CMake"
-  LANGUAGES CXX)
+#project(
+#  Coding
+#  VERSION 1.0
+#  DESCRIPTION "Practice "
+#  LANGUAGES CXX)
+
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_OSX_ARCHITECTURES "arm64")
+#set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
+#include_directories(/opt/homebrew/include)
+#link_directories(/opt/homebrew/lib)
+
 
 if(CMAKE_COMPILER_IS_GNUCXX)
   add_definitions(-std=gnu++0x)
 endif()
 
-SET (CMAKE_CXX_COMPILER             "/usr/local/opt/llvm/bin/clang++")
-SET (CMAKE_CXX_FLAGS                "-Wall")
-SET (CMAKE_CXX_FLAGS_DEBUG          "-g")
-SET (CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG")
-SET (CMAKE_CXX_FLAGS_RELEASE        "-O4 -DNDEBUG")
-SET (CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
-set (CMAKE_CXX_STANDARD 11)
+# Set compiler and flags
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  # Brew install clang
+  #set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/")
+  # Default macos Clang
+  #set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
+endif()
 
-  # The compiled library code is here#
+
+
+# Common compiler warnings
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
+
+
+# Configuration-specific flags
+set(CMAKE_CXX_FLAGS_DEBUG "-g")
+set(CMAKE_CXX_FLAGS_RELEASE "-O3 -DNDEBUG")
+set(CMAKE_CXX_FLAGS_MINSIZEREL "-Os -DNDEBUG")
+set(CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g")
+
+# Enable testing
+enable_testing()
+
+
+# The compiled library code is here#
 add_subdirectory(src)
-
+add_subdirectory(include)
+add_subdirectory(test)
 

@@ -13,11 +13,11 @@
 
 int FindKnapsack(int capacity, std::vector<int> &weights, std::vector<int> &values, int n) {
     std::vector<std::vector<int>> dp(n+1, std::vector<int>(capacity + 1, 0));
-    for (int idx = 0; idx < dp.size(); idx++) {
-        for (int weight = 0; weight < dp[0].size(); weight++) {
+    for (std::size_t idx = 0; idx < dp.size(); idx++) {
+        for (std::size_t weight = 0; weight < dp[0].size(); weight++) {
             if ((idx == 0) || (weight == 0)) {
                 dp[idx][weight] = 0;
-            } else if (weights[idx - 1] <= weight) {
+            } else if (weights[idx - 1] <= static_cast<int>(weight)) {
                 dp[idx][weight] = std::max(values[idx-1] + dp[idx -1][weight - weights[idx-1]], dp[idx-1][weight]);
             } else {
                 dp[idx][weight] = dp[idx-1][weight];

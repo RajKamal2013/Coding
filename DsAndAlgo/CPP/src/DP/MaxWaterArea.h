@@ -32,7 +32,7 @@ int waterAreaInt(vector<int> heights) {
     // calculate left maximum height
     leftMaxHeight[0] = 0;
     int currMax=heights[0];
-    for (int i = 1; i < heights.size(); i++) {
+    for (std::size_t i = 1; i < heights.size(); i++) {
         if (heights[i-1] >= currMax) {
             leftMaxHeight[i] = heights[i-1];
             currMax = heights[i-1];
@@ -44,7 +44,8 @@ int waterAreaInt(vector<int> heights) {
     //calculate right maximum height
     rightMaxHeight[heights.size()-1] = 0;
     currMax = heights[heights.size()-1];
-    for (int i = heights.size()-2; i>= 0; i--) {
+    // Using int for reverse loop to avoid unsigned underflow when reaching 0
+    for (int i = static_cast<int>(heights.size())-2; i >= 0; i--) {
         if (heights[i+1] >= currMax) {
             rightMaxHeight[i] = heights[i+1];
             currMax = heights[i+1];
@@ -55,7 +56,7 @@ int waterAreaInt(vector<int> heights) {
 
     if (debugPrint) {
         cout<< "Left Max and Right max for element at each idx" << endl;
-        for (int i = 0;i < heights.size(); i++) {
+        for (std::size_t i = 0; i < heights.size(); i++) {
             cout <<  " Data:" << heights[i] << " Left Max: " << leftMaxHeight[i] << " Right Max:" << rightMaxHeight[i] << endl;
         }
     }
@@ -63,7 +64,7 @@ int waterAreaInt(vector<int> heights) {
     // calculate area
     int currHeight=0;
     area = 0;
-    for (int i = 0; i < heights.size(); i++) {
+    for (std::size_t i = 0; i < heights.size(); i++) {
         currHeight = min(leftMaxHeight[i], rightMaxHeight[i]) - heights[i];
         if (currHeight > 0) {
             area = area + currHeight * 1;

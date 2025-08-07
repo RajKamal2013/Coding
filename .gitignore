@@ -202,3 +202,14 @@ GoLang/learning/bazel-testlogs
 GoLang/learning/MODULE.bazel
 GoLang/learning/bazel-out
 GoLang/learning/MODULE.bazel.lock
+DsAndAlgo/Python/DS/.idea/DS.iml
+DsAndAlgo/Python/DS/.idea/inspectionProfiles/profiles_settings.xml
+DsAndAlgo/Python/DS/.idea/misc.xml
+DsAndAlgo/Python/DS/.idea/modules.xml
+DsAndAlgo/Python/DS/.idea/vcs.xml
+DsAndAlgo/Python/DS/__pycache__/__init__.cpython-311.pyc
+*.pyc
+DsAndAlgo/Java/Coding/.idea/workspace.xml
+/DsAndAlgo/Java/Coding/.idea
+DsAndAlgo/Java/Coding/.idea/workspace.xml
+.idea/

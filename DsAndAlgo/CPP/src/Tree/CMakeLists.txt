@@ -46,7 +46,7 @@ add_executable(KthLargestValue
 add_executable(ReconstructBST
                 BST.h BST.cpp
                 ReconstructBST.h 
-                ReconstructBSTTest.cpp
+                ReconstructBstTest.cpp
                 )     
                 
 add_executable(SameBST

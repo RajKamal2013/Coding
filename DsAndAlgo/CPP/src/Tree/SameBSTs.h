@@ -12,9 +12,9 @@
 using namespace std; 
 
 
-vector<int> getLeftSubArray(vector<int> arr) {
+vector<int> getLeftSubArray(const vector<int>& arr) {
     vector<int> smaller = {};
-    for (int idx = 1; idx < arr.size(); idx++){
+    for (size_t idx = 1; idx < arr.size(); idx++){
         if (arr[idx] < arr[0]) {
             smaller.push_back(arr[idx]);
         }
@@ -22,9 +22,9 @@ vector<int> getLeftSubArray(vector<int> arr) {
     return smaller;
 }
 
-vector<int> getRightSubArray(vector<int> arr) {
+vector<int> getRightSubArray(const vector<int>& arr) {
     vector<int> larger = {};
-    for (int idx = 1; idx < arr.size(); idx++) {
+    for (size_t idx = 1; idx < arr.size(); idx++) {
           if (arr[idx] >= arr[0]) {
             larger.push_back(arr[idx]);
         }
@@ -32,7 +32,7 @@ vector<int> getRightSubArray(vector<int> arr) {
     return larger;
 }
 
-bool sameBsts(vector<int> arrayOne, vector<int> arrayTwo) {
+bool sameBsts(const vector<int>& arrayOne, const vector<int>& arrayTwo) {
   
   if (arrayOne.size() != arrayTwo.size()) {
     return false;

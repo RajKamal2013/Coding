@@ -6,6 +6,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 
@@ -42,7 +43,7 @@ void maxIncreasingSubsequenceSumInt(vector<int> arr, int& globalMax, int& global
         cout << "Sum Including: " << arr[0] << " is: " << sumI[0] << " Max Element: " << maxI[0] << " Prev: " << traceI[0] << endl;
         cout << "Sum Excluding: " << arr[0] << " is: " << sumE[0] << " Max Element: " << maxE[0] << " Prev: " << traceE[0] << endl;
     }
-    for (int i = 1; i < arr.size(); i++) {
+    for (size_t i = 1; i < arr.size(); i++) {
         if (debug) {
             cout << "Working on Arr: " << arr[i] << endl;
         }
@@ -62,19 +63,22 @@ void maxIncreasingSubsequenceSumInt(vector<int> arr, int& globalMax, int& global
                     traceI[i] = traceE[i-1];
                 }   
             } else {
-                int j = i - 1;
-                while ((j >= 0) && (maxE[j] >= arr[i])) {
-                    j = j - 1;
+                size_t j = i;
+                while (j > 0 && maxE[j-1] >= arr[i]) {
+                    j--;
                 }
+                j = (j > 0) ? j-1 : 0;
                 if (sumI[i] < sumE[j] + arr[i]) {
                     sumI[i] = sumE[j] + arr[i];
                     traceI[i] = traceE[j];
                 }
             }
         } else {
-            int j = i - 2;
-            while ((j >= 0) && (maxI[j] > arr[i])) {
-                j = j - 1;
+            size_t j = (i > 1) ? i-2 : 0;
+            if (i > 1) {
+                while (j > 0 && maxI[j] > arr[i]) {
+                    j--;
+                }
             }
             if (maxI[j] < arr[i]) {
                 sumI[i] = sumI[j] + arr[i];
@@ -83,10 +87,11 @@ void maxIncreasingSubsequenceSumInt(vector<int> arr, int& globalMax, int& global
                 sumI[i] = arr[i];
                 traceI[i] = -1;
             }
-            j = i - 1;
-            while ((j >= 0) && (maxE[j] > arr[i])) {
-                j = j - 1;
+            j = i;
+            while (j > 0 && maxE[j-1] > arr[i]) {
+                j--;
             }
+            j = (j > 0) ? j-1 : 0;
             if (maxE[j] < arr[i]) {
                 if (sumI[i] < sumE[j] + arr[i]) {
                     sumI[i] = sumE[j] + arr[i];
@@ -136,18 +141,18 @@ void maxIncreasingSubsequenceSumInt(vector<int> arr, int& globalMax, int& global
     }
 
     if (sumI[currId] == globalMaxSum) {
-            int id = currId;
+            size_t id = currId;
             res.push_back(arr[id]);
             while (traceI[id] != -1) {
                 res.push_back(arr[traceI[id]]);
-                id = traceI[id];
+                id = static_cast<size_t>(traceI[id]);
             }
     } else {
-        int id = currId;
+        size_t id = currId;
         res.push_back(arr[id]);
         while (traceE[id] != -1) {
             res.push_back(arr[traceE[id]]);
-            id = traceE[id];
+            id = static_cast<size_t>(traceE[id]);
         }
     }
     reverse(res.begin(), res.end());
@@ -217,10 +222,10 @@ vector<vector<int>> maxSumIncreasingSubsequence2(vector<int> array) {
     vector<int> trace(array.size(), -1);
     vector<int> sums(array);
     vector<vector<int>> res;
-    int maxSumIdx = 0;
+    size_t maxSumIdx = 0;
 
-    for (int i = 0; i < array.size(); i++) {
-        for (int j = 0; j < i ; j++) {
+    for (size_t i = 0; i < array.size(); i++) {
+        for (size_t j = 0; j < i ; j++) {
              if (array[i] > array[j]){
                 if (sums[i] < sums[j] + array[i]) {
                     sums[i] = sums[j] + array[i];
@@ -234,11 +239,11 @@ vector<vector<int>> maxSumIncreasingSubsequence2(vector<int> array) {
     }
 
     vector<int> arr;
-    arr.push_back(maxSumIdx);
-    int idx = maxSumIdx;
+    arr.push_back(array[maxSumIdx]);
+    size_t idx = maxSumIdx;
     while (trace[idx] != -1) {
         arr.push_back(array[trace[idx]]);
-        idx = trace[idx];
+        idx = static_cast<size_t>(trace[idx]);
     }
     sort(arr.begin(), arr.end());
 
