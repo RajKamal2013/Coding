@@ -1,6 +1,6 @@
 package DS.DList;
 
-import DS.globals;
+import org.dataStructure.globals;
 
 public class DList<E> implements List<E>{
     private DLink<E> head;

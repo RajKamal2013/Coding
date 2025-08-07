@@ -1,8 +1,11 @@
 
 # Create an interface library for headers
 add_library(project_headers INTERFACE
-        ../../include/practice/MaximumProduct.h
-        ../../include/practice/TreeNode.h)
+        ../../include/practice/TreeNode.h
+        ../../include/practice/TreeUtils.h
+        ../../include/practice/ListNode.h
+        ../../include/practice/ListUtils.h
+        ../../include/practice/MaximumProduct.h)
 
 # Set include directories for the interface library
 target_include_directories(project_headers
@@ -13,10 +16,14 @@ target_include_directories(project_headers
 
 # Main library
 add_library(Practice
-        ../../include/practice/MaximumProduct.h
+#        ../../include/practice/TreeNode.h
+#        ../../include/practice/TreeUtils.h
+#        ../../include/practice/ListNode.h
+#        ../../include/practice/ListUtils.h
+#        ../../include/practice/MaximumProduct.h
         MaximumProduct.cpp
-        ../../include/practice/TreeNode.h
         PrintTree.h
+        LinkedListInBinaryTree.h
 )
 
 

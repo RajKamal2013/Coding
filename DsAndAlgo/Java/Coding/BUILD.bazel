@@ -3,9 +3,9 @@ load("@rules_jvm_external//:defs.bzl", "artifact")
 load("@contrib_rules_jvm//java:defs.bzl", "JUNIT5_DEPS", "java_test_suite")
 
 java_binary(
-    name = "Main",
-    srcs = ["src/main/java/org/example/Main.java"],
-    main_class = "org.example.Main",
+    name = "org.dataStructure.Main",
+    srcs = ["src/main/java/org/example/org.dataStructure.Main.java"],
+    main_class = "org.example.org.dataStructure.Main",
     deps = [
         ":myunit-lib",
     ],

@@ -41,8 +41,8 @@ public class PrintTreeTest {
 
     @Test
     void testPrintTreeWithMultipleLevels() {
-        TreeNode root = PrintTree.createTree(Arrays.asList(1, 2, 3, 4, 5, null, 6));
-        PrintTree.printLevelOrder(root);
+        TreeNode root = TreeUtils.createTree(Arrays.asList(1, 2, 3, 4, 5, null, 6));
+        TreeUtils.printLevelOrder(root);
         List<List<String>> result = PrintTree.printTree(root);
         assertEquals(3, result.size(), "Expected three levels in the tree");
         assertEquals("1", result.get(0).get(3), "The root node should be correctly placed at the center");
@@ -61,7 +61,7 @@ public class PrintTreeTest {
             expected.add(Arrays.asList(row));
         }
         List<Integer> input = Arrays.asList(1, 2, 3, null, 4);
-        TreeNode root = PrintTree.createTree(input);
+        TreeNode root = TreeUtils.createTree(input);
         List<List<String>> result = PrintTree.printTree(root);
         assertEquals(expected, result, "The tree should be printed correctly");
     }

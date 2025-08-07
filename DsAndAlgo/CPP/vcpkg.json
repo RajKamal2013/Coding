@@ -11,5 +11,8 @@
   }, {
     "name" : "vcpkg-cmake",
     "version>=" : "2024-04-23"
+  }, {
+    "name" : "abseil",
+    "version>=" : "20250127.1#1"
   } ]
 }

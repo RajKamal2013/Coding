@@ -1,4 +1,4 @@
-package DS;
+package org.dataStructure;
 
 public class globals {
     public static int []warning = {1, 2, 3};

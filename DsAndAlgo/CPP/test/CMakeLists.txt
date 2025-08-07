@@ -33,9 +33,10 @@ add_executable(unit_tests ${TEST_SOURCES})
 
 target_link_libraries(unit_tests
         PRIVATE
-        GTest::gtest
-        GTest::gtest_main
+        GTest::GTest
+        GTest::Main
         Practice
+        Threads::Threads
 )
 #set_target_properties(unit_tests
 #    PROPERTIES
@@ -43,6 +44,8 @@ target_link_libraries(unit_tests
 #)
 add_executable(maximum_product_tests
         Practice/MaximumProductTests.cpp
+        ../include/practice/ListNode.h
+        ../include/practice/TreeUtils.h
 )
 target_link_libraries(maximum_product_tests
         PRIVATE
@@ -68,6 +71,22 @@ target_link_libraries(PrintTreeTests
 )
 
 target_include_directories(PrintTreeTests
+        PRIVATE
+        ${CMAKE_SOURCE_DIR}/include
+)
+
+add_executable(LinkedListInBinaryTreeTests
+        Practice/LinkedListInBinaryTreeTest.cpp
+)
+
+target_link_libraries(LinkedListInBinaryTreeTests
+        PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Practice
+)
+
+target_include_directories(LinkedListInBinaryTreeTests
         PRIVATE
         ${CMAKE_SOURCE_DIR}/include
 )

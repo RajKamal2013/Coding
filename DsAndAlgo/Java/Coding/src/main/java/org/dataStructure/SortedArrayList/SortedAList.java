@@ -1,7 +1,6 @@
 package DS.SortedArrayList;
 
-import DS.SortedList.SortedList;
-import DS.globals;
+import org.dataStructure.globals;
 
 public class SortedAList <Key extends Comparable<? super Key>, E> implements SAList<Key, E>{
     private static final int defaultSize = 10;

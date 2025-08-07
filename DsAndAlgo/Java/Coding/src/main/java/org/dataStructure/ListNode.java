@@ -1,4 +1,4 @@
-package DS;
+package org.dataStructure;
 
 public class ListNode<T> {
     private T data;
