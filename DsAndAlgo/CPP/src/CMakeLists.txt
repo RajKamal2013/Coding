@@ -4,3 +4,4 @@ add_executable (main
 add_subdirectory(DP)
 add_subdirectory(Tree)
 add_subdirectory(Practice)
+add_subdirectory(Patterns)
