@@ -1,4 +1,4 @@
-package org.patterns.twoPointer;
+package org.patterns;
 
 /*
     * This code is part of the "Two Pointer" pattern.
@@ -7,7 +7,7 @@ package org.patterns.twoPointer;
  */
 
 
-public class SortNumbers {
+public class TwoPointer {
 
     public static int[] sortColors (int[] colors) {
 

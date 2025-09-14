@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (maximum product)">
+      <change afterPath="$PROJECT_DIR$/../../CPP/src/Patterns/SlidingWindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/SlidingWindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GoLang/internal/patterns/slidingWindow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../GoLang/internal/patterns/testSlidingWindow.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/SlidingWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/SlidingWindowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CPP/src/Patterns/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/Patterns/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CPP/test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/test/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/twoPointer/SortNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/TwoPointer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/PrintTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/practice/PrintTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,17 +36,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Coding" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Coding" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -46,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -83,30 +85,48 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build Coding.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Coding [:Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Coding [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MaximumProductTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MyUnitTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.MyUnitTest.testConcatenate.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PrintTreeTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PrintTreeTest.testPrintTreeTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PrintTreeTest.testPrintTreeWithNullRoot.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.PrintTreeTest.testPrintTreeWithSingleNode.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;DsAndAlgo&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/raj-kamal/Documents/git/Coding/Java/Coding&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/rakamal/Documents/Personal/Coding/DsAndAlgo/Java/Coding/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build Coding.executor": "Run",
+    "Gradle.Coding [:Main.main()].executor": "Run",
+    "Gradle.Coding [:org.example.Main.main()].executor": "Run",
+    "Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor": "Run",
+    "Gradle.MaximumProductTest.executor": "Run",
+    "Gradle.MyUnitTest.executor": "Run",
+    "Gradle.MyUnitTest.testConcatenate.executor": "Run",
+    "Gradle.PrintTreeTest.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeTest.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeWithNullRoot.executor": "Run",
+    "Gradle.PrintTreeTest.testPrintTreeWithSingleNode.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "DsAndAlgo",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/raj-kamal/Documents/git/Coding/Java/Coding",
+    "onboarding.tips.debug.path": "/Users/rakamal/Documents/Personal/Coding/DsAndAlgo/Java/Coding/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.patterns.twoPointer" />
+    </key>
+  </component>
   <component name="RunManager" selected="Gradle.PrintTreeTest.testPrintTreeTest">
     <configuration name="PrintTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
