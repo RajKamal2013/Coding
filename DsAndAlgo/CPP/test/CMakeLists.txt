@@ -104,6 +104,25 @@ target_include_directories(TwoPointerTest PRIVATE
         ${CMAKE_SOURCE_DIR}/src
 )
 
+
+add_executable(SlidingWindowTest Practice/SlidingWindow.cpp)
+target_link_libraries(SlidingWindowTest PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Patterns)
+target_include_directories(SlidingWindowTest PRIVATE
+        ${CMAKE_SOURCE_DIR}/src
+)
+
+add_executable(TwoPointerTest Practice/TwoPointerTest.cpp)
+target_link_libraries(TwoPointerTest PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Patterns)
+target_include_directories(TwoPointerTest PRIVATE
+        ${CMAKE_SOURCE_DIR}/src
+)
+
 # Link libraries
 #target_link_libraries(unit_tests
 #        PRIVATE
