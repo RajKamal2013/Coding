@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (maximum product)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/MergeIntervals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/MergeIntervalsTest.java" afterDir="false" />
+    <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (LeastInterval)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/SlidingWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/patterns/SlidingWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/patterns/SlidingWindowTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/MergeIntervals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/patterns/MergeIntervalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/patterns/MergeIntervalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +51,12 @@
     &quot;assignee&quot;: &quot;RajKamal2013&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/RajKamal2013/Coding.git&quot;,
-    &quot;accountId&quot;: &quot;9fbd4700-b20d-4eff-9e79-a12b97d01914&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rajkamal2013/Coding.git",
+    "accountId": "c2aa4903-8089-4a04-89b8-c1340f2c1b8a"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -86,8 +84,12 @@
     "Gradle.Coding [:org.example.Main.main()].executor": "Run",
     "Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor": "Run",
     "Gradle.MaximumProductTest.executor": "Run",
+    "Gradle.MergeIntervalsTest.testInsertInterval.executor": "Run",
+    "Gradle.MergeIntervalsTest.testInsertInterval1.executor": "Run",
+    "Gradle.MergeIntervalsTest.testInsertInterval2.executor": "Run",
     "Gradle.MergeIntervalsTest.testMergeInterval.executor": "Run",
     "Gradle.MergeIntervalsTest.testMergeInterval2.executor": "Run",
+    "Gradle.MergeIntervalsTest.testmergeIntervals.executor": "Debug",
     "Gradle.MyUnitTest.executor": "Run",
     "Gradle.MyUnitTest.testConcatenate.executor": "Run",
     "Gradle.PrintTreeTest.executor": "Run",
@@ -123,8 +125,8 @@
       <recent name="org.patterns.twoPointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MergeIntervalsTest.testMergeInterval2">
-    <configuration name="MergeIntervalsTest.testMergeInterval" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MergeIntervalsTest.testInsertInterval">
+    <configuration name="MergeIntervalsTest.testInsertInterval" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +139,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.patterns.MergeIntervalsTest.testMergeInterval&quot;" />
+            <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MergeIntervalsTest.testInsertInterval1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval1&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MergeIntervalsTest.testInsertInterval2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,7 +222,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PrintTreeTest.testPrintTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MergeIntervalsTest.testmergeIntervals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -185,55 +235,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="PrintTreeTest.testPrintTreeWithMultipleLevels" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeWithMultipleLevels&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SlidingWindowTest.testFindRepeatedDnaSequence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.SlidingWindowTest.testFindRepeatedDnaSequence&quot;" />
+            <option value="&quot;org.patterns.MergeIntervalsTest.testmergeIntervals&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -246,11 +248,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval" />
+        <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval1" />
+        <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval2" />
+        <item itemvalue="Gradle.MergeIntervalsTest.testmergeIntervals" />
         <item itemvalue="Gradle.MergeIntervalsTest.testMergeInterval2" />
-        <item itemvalue="Gradle.MergeIntervalsTest.testMergeInterval" />
-        <item itemvalue="Gradle.SlidingWindowTest.testFindRepeatedDnaSequence" />
-        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeTest" />
-        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747472621883</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added code to practice (LeastInterval)">
+      <option name="closed" value="true" />
+      <created>1758364900320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1758364900320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,6 +297,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added code to practice (maximum product)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code to practice (maximum product)" />
+    <MESSAGE value="Added code to practice (LeastInterval)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code to practice (LeastInterval)" />
   </component>
 </project>

@@ -3,6 +3,7 @@ package org.patterns;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MergeIntervalsTest {
     @Test
@@ -27,4 +28,47 @@ public class MergeIntervalsTest {
         int actual = MergeIntervals.leastInterval(charArr, n);
         assertEquals(expected, actual);
     }
+    @Test
+    void testmergeIntervals() {
+        int[][] intervals = {{4,6},{3,7},{1,5}};
+        int[][] mergedIntervals = MergeIntervals.mergeIntervals(intervals);
+        assertTrue(mergedIntervals.length >= 1);
+    }
+
+    @Test
+    void testInsertInterval() {
+        int[][] intervals = {{1, 3}, {5, 7}, {8, 9}, {10, 13}};
+        int[] interval = {2, 6};
+        int[][] expected = {{1, 7}, {8, 9}, {10, 13}};
+        int[][] actual = MergeIntervals.insertInterval(intervals, interval);
+        for (int[] row: actual) {
+            System.out.println(row[0] + " " + row[1]);
+        }
+        assertTrue(actual.length == expected.length);
+    }
+
+    @Test
+    void testInsertInterval1() {
+        int[][] intervals = {{1,2},{3,4},{5,8},{9,15}};
+        int[] interval = {2, 5};
+        int[][] expected = {{1, 8}, {9, 15}};
+        int[][] actual = MergeIntervals.insertInterval(intervals, interval);
+        for (int[] row: actual) {
+            System.out.println(row[0] + " " + row[1]);
+        }
+        assertTrue(actual.length == expected.length);
+    }
+
+    @Test
+    void testInsertInterval2() {
+        int[][] intervals = {{1,6},{8,9},{10,15},{16,18}};
+        int[] interval = {9, 10};
+        int[][] expected = {{1, 6}, {8, 15}, {16, 18}};
+        int[][] actual = MergeIntervals.insertInterval(intervals, interval);
+        for (int[] row: actual) {
+            System.out.println(row[0] + " " + row[1]);
+        }
+        assertTrue(actual.length == expected.length);
+    }
+
 }
