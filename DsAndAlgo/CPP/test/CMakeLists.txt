@@ -29,13 +29,16 @@ file(GLOB_RECURSE TEST_SOURCES
 
 # Add this before your test executable
 # Create test executable
-add_executable(unit_tests ${TEST_SOURCES})
+add_executable(unit_tests ${TEST_SOURCES}
+        ../src/Patterns/TwoPointer/TwoPointers.h
+        Practice/TwoPointerTest.cpp)
 
 target_link_libraries(unit_tests
         PRIVATE
         GTest::GTest
         GTest::Main
         Practice
+        Patterns
         Threads::Threads
 )
 #set_target_properties(unit_tests
@@ -91,6 +94,34 @@ target_include_directories(LinkedListInBinaryTreeTests
         ${CMAKE_SOURCE_DIR}/include
 )
 
+
+add_executable(TwoPointerTest Practice/TwoPointerTest.cpp)
+target_link_libraries(TwoPointerTest PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Patterns)
+target_include_directories(TwoPointerTest PRIVATE
+        ${CMAKE_SOURCE_DIR}/src
+)
+
+
+add_executable(SlidingWindowTest Practice/SlidingWindow.cpp)
+target_link_libraries(SlidingWindowTest PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Patterns)
+target_include_directories(SlidingWindowTest PRIVATE
+        ${CMAKE_SOURCE_DIR}/src
+)
+
+add_executable(TwoPointerTest Practice/TwoPointerTest.cpp)
+target_link_libraries(TwoPointerTest PRIVATE
+        GTest::gtest
+        GTest::gtest_main
+        Patterns)
+target_include_directories(TwoPointerTest PRIVATE
+        ${CMAKE_SOURCE_DIR}/src
+)
 
 # Link libraries
 #target_link_libraries(unit_tests
