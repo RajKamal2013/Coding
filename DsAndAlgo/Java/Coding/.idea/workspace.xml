@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (maximum product)">
-      <change afterPath="$PROJECT_DIR$/../../CPP/src/Patterns/SlidingWindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../CPP/test/Practice/SlidingWindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GoLang/internal/patterns/slidingWindow.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GoLang/internal/patterns/testSlidingWindow.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/SlidingWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/SlidingWindowTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/src/Patterns/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/src/Patterns/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../CPP/test/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../CPP/test/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/MergeIntervals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/MergeIntervalsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/twoPointer/SortNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/TwoPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/PrintTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/practice/PrintTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/SlidingWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/SlidingWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/patterns/SlidingWindowTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/patterns/SlidingWindowTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,6 +86,8 @@
     "Gradle.Coding [:org.example.Main.main()].executor": "Run",
     "Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor": "Run",
     "Gradle.MaximumProductTest.executor": "Run",
+    "Gradle.MergeIntervalsTest.testMergeInterval.executor": "Run",
+    "Gradle.MergeIntervalsTest.testMergeInterval2.executor": "Run",
     "Gradle.MyUnitTest.executor": "Run",
     "Gradle.MyUnitTest.testConcatenate.executor": "Run",
     "Gradle.PrintTreeTest.executor": "Run",
@@ -100,6 +95,7 @@
     "Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels.executor": "Run",
     "Gradle.PrintTreeTest.testPrintTreeWithNullRoot.executor": "Run",
     "Gradle.PrintTreeTest.testPrintTreeWithSingleNode.executor": "Run",
+    "Gradle.SlidingWindowTest.testFindRepeatedDnaSequence.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -127,8 +123,8 @@
       <recent name="org.patterns.twoPointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PrintTreeTest.testPrintTreeTest">
-    <configuration name="PrintTreeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.MergeIntervalsTest.testMergeInterval2">
+    <configuration name="MergeIntervalsTest.testMergeInterval" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +137,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.practice.PrintTreeTest&quot;" />
+            <option value="&quot;org.patterns.MergeIntervalsTest.testMergeInterval&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MergeIntervalsTest.testMergeInterval2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.MergeIntervalsTest.testMergeInterval2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,7 +220,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PrintTreeTest.testPrintTreeWithNullRoot" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SlidingWindowTest.testFindRepeatedDnaSequence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -213,31 +233,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeWithNullRoot&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="PrintTreeTest.testPrintTreeWithSingleNode" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.practice.PrintTreeTest.testPrintTreeWithSingleNode&quot;" />
+            <option value="&quot;org.patterns.SlidingWindowTest.testFindRepeatedDnaSequence&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -250,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MergeIntervalsTest.testMergeInterval2" />
+        <item itemvalue="Gradle.MergeIntervalsTest.testMergeInterval" />
+        <item itemvalue="Gradle.SlidingWindowTest.testFindRepeatedDnaSequence" />
         <item itemvalue="Gradle.PrintTreeTest.testPrintTreeTest" />
         <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithMultipleLevels" />
-        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithSingleNode" />
-        <item itemvalue="Gradle.PrintTreeTest" />
-        <item itemvalue="Gradle.PrintTreeTest.testPrintTreeWithNullRoot" />
       </list>
     </recent_temporary>
   </component>

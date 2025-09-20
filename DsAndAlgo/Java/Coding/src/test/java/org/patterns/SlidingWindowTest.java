@@ -2,6 +2,9 @@ package org.patterns;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 import static org.patterns.SlidingWindow.findLongestSubstring;
 
@@ -63,6 +66,16 @@ class SlidingWindowTest {
         void testComplexMixedCase() {
             assertEquals(6, findLongestSubstring("abcaefghib"),
                     "Longest non-repeating substring is likely \"caefgh\" or similar of length 6");
+        }
+
+        @Test
+        void testFindRepeatedDnaSequence() {
+            String str = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT";
+            List<String> subString = SlidingWindow.findRepeatedDnaSequences(str);
+            List<String> expected = new ArrayList<>();
+            expected.add("AAAAACCCCC");
+            expected.add("CCCCCAAAAA");
+            assertNotNull(subString);
         }
 
 }
