@@ -1,9 +1,11 @@
 package org.patterns;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.patterns.MergeIntervals.findSets;
 
 public class MergeIntervalsTest {
     @Test
@@ -70,5 +72,14 @@ public class MergeIntervalsTest {
         }
         assertTrue(actual.length == expected.length);
     }
+
+    @Test
+    void testMeetingRooms() {
+        int[][] intervals = {{2, 8}, {3, 4}, {3, 9}, {5, 11}, {8, 20}, {11, 15}};
+        int meetingRoomCount = findSets(intervals);
+        int expected = 3;
+        assertEquals(expected, meetingRoomCount);
+    }
+
 
 }

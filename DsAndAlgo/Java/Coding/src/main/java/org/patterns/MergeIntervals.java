@@ -9,7 +9,8 @@ public class MergeIntervals {
 
     /**
      * You are given a character array tasks, where each character represents a unique task.
-     * You also have a cooling time n, which is the minimum number of idle intervals required between two identical tasks.
+     * You also have a cooling time n, which is the minimum number of idle intervals required
+     * between two identical tasks.
      * The CPU can perform one task per interval or be idle.
      * The goal is to return the least number of intervals to complete all tasks.
      * Input: tasks = ["A", "A", "A", "B", "B", "B"], n = 2
@@ -155,6 +156,39 @@ public class MergeIntervals {
         return nonOverlappingIntervals.toArray(new int[nonOverlappingIntervals.size()][]);
     }
 
+    /**
+     * Given list of intervals, find out how many meeting rooms will be needed.
+     * @param intervals, list of intervals
+     * @return number of meeting rooms needed.
+     * Example: {[2, 8], [3, 4], [3, 9], [5, 11], [8, 20], [11, 15]}
+     * Answer: 3
+     */
+    public static int findSets(int[][] intervals) {
+        if (intervals == null || intervals.length == 0) {
+            return 0;
+        }
+        if (intervals.length == 1) { return 1;}
+
+        int meetingRooms = 0;
+        Arrays.sort(intervals, (a, b) -> {return Integer.compare(a[0], b[0]);});
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        meetingRooms = 1;
+        minHeap.offer(intervals[0][1]);
+        int nextAvailableRoom;
+        for (int i = 1; i < intervals.length; i++) {
+            nextAvailableRoom = minHeap.peek();
+            if (intervals[i][0] < nextAvailableRoom) {
+                meetingRooms = meetingRooms + 1;
+            } else {
+                minHeap.poll();
+            }
+            minHeap.offer(intervals[i][1]);
+        }
+        return meetingRooms;
+    }
+
+
+    // This code has issue
     public static int[][] insertInterval(int[][] existingIntervals, int[] newInterval) {
         if (existingIntervals == null || existingIntervals.length == 0) {
             return new int[][]{};
