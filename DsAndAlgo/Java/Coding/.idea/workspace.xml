@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (LeastInterval)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/InPlaceManipulation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/KWayMerge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/HeapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/KWayMergeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/practice/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/practice/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/patterns/MergeIntervalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/patterns/MergeIntervalsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/Heap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +84,9 @@
     &quot;Gradle.Build Coding.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Coding [:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Coding [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.HeapTest.testLongestDiverseString.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KWayMergeTest.testKthSmallestElementInMatrix.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KWayMergeTest.testPrintMatrixInSortedOrder.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MaximumProductTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MergeIntervalsTest.testInsertInterval.executor&quot;: &quot;Run&quot;,
@@ -108,6 +110,7 @@
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
@@ -129,7 +132,79 @@
       <recent name="org.patterns.twoPointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MergeIntervalsTest.testMeetingRooms">
+  <component name="RunManager" selected="Gradle.KWayMergeTest.testKthSmallestElementInMatrix">
+    <configuration name="HeapTest.testLongestDiverseString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.HeapTest.testLongestDiverseString&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KWayMergeTest.testKthSmallestElementInMatrix" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.KWayMergeTest.testKthSmallestElementInMatrix&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KWayMergeTest.testPrintMatrixInSortedOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.KWayMergeTest.testPrintMatrixInSortedOrder&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MergeIntervalsTest.testInsertInterval" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -144,54 +219,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MergeIntervalsTest.testInsertInterval1" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval1&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MergeIntervalsTest.testInsertInterval2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,37 +253,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MergeIntervalsTest.testmergeIntervals" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.MergeIntervalsTest.testmergeIntervals&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.KWayMergeTest.testKthSmallestElementInMatrix" />
+        <item itemvalue="Gradle.KWayMergeTest.testPrintMatrixInSortedOrder" />
+        <item itemvalue="Gradle.HeapTest.testLongestDiverseString" />
         <item itemvalue="Gradle.MergeIntervalsTest.testMeetingRooms" />
         <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval" />
-        <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval1" />
-        <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval2" />
-        <item itemvalue="Gradle.MergeIntervalsTest.testmergeIntervals" />
       </list>
     </recent_temporary>
   </component>
@@ -297,11 +300,45 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="adca7f34-e40c-4b8d-bf82-987a10597524" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="DsAndAlgo" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="adca7f34-e40c-4b8d-bf82-987a10597524">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="DsAndAlgo" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
