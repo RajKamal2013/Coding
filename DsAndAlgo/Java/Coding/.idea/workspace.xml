@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (LeastInterval)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/KWayMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/HeapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/KWayMergeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/KTopElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/KTopElementTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/Heap.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +83,8 @@
     &quot;Gradle.Coding [:Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.Coding [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.HeapTest.testLongestDiverseString.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KTopElementTest.testKTopFrequentElement.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KTopElementTest.testReorganizeString.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.KWayMergeTest.testKthSmallestElementInMatrix.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.KWayMergeTest.testPrintMatrixInSortedOrder.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MaximumProductTest.calculateMaxProduct_NegativeInput_ThrowsIllegalArgumentException.executor&quot;: &quot;Run&quot;,
@@ -132,7 +132,7 @@
       <recent name="org.patterns.twoPointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.KWayMergeTest.testKthSmallestElementInMatrix">
+  <component name="RunManager" selected="Gradle.KTopElementTest.testReorganizeString">
     <configuration name="HeapTest.testLongestDiverseString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -147,6 +147,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;org.patterns.HeapTest.testLongestDiverseString&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KTopElementTest.testKTopFrequentElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.KTopElementTest.testKTopFrequentElement&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="KTopElementTest.testReorganizeString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.KTopElementTest.testReorganizeString&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,61 +253,13 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MergeIntervalsTest.testInsertInterval" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.MergeIntervalsTest.testInsertInterval&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MergeIntervalsTest.testMeetingRooms" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.MergeIntervalsTest.testMeetingRooms&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.KTopElementTest.testReorganizeString" />
+        <item itemvalue="Gradle.KTopElementTest.testKTopFrequentElement" />
         <item itemvalue="Gradle.KWayMergeTest.testKthSmallestElementInMatrix" />
         <item itemvalue="Gradle.KWayMergeTest.testPrintMatrixInSortedOrder" />
         <item itemvalue="Gradle.HeapTest.testLongestDiverseString" />
-        <item itemvalue="Gradle.MergeIntervalsTest.testMeetingRooms" />
-        <item itemvalue="Gradle.MergeIntervalsTest.testInsertInterval" />
       </list>
     </recent_temporary>
   </component>
