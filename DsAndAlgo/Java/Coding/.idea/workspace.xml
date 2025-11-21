@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (LeastInterval)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/KTopElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/KTopElementTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/ModifiedBinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/ModifiedBinarySearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +27,12 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Coding" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -96,6 +101,11 @@
     &quot;Gradle.MergeIntervalsTest.testMergeInterval.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MergeIntervalsTest.testMergeInterval2.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MergeIntervalsTest.testmergeIntervals.executor&quot;: &quot;Debug&quot;,
+    &quot;Gradle.ModifiedBinarySearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ModifiedBinarySearchTest.testBinarySearchRotated.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ModifiedBinarySearchTest.testFindClosestElements (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ModifiedBinarySearchTest.testFindClosestElements.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ModifiedBinarySearchTest.testSingleNonDuplicate.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MyUnitTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.MyUnitTest.testConcatenate.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.PrintTreeTest.executor&quot;: &quot;Run&quot;,
@@ -132,55 +142,7 @@
       <recent name="org.patterns.twoPointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.KTopElementTest.testReorganizeString">
-    <configuration name="HeapTest.testLongestDiverseString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.HeapTest.testLongestDiverseString&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="KTopElementTest.testKTopFrequentElement" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.KTopElementTest.testKTopFrequentElement&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.ModifiedBinarySearchTest.testBinarySearchRotated">
     <configuration name="KTopElementTest.testReorganizeString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -205,7 +167,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="KWayMergeTest.testKthSmallestElementInMatrix" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModifiedBinarySearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -218,7 +180,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.patterns.KWayMergeTest.testKthSmallestElementInMatrix&quot;" />
+            <option value="&quot;org.patterns.ModifiedBinarySearchTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -229,7 +191,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="KWayMergeTest.testPrintMatrixInSortedOrder" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModifiedBinarySearchTest.testBinarySearchRotated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -242,7 +204,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.patterns.KWayMergeTest.testPrintMatrixInSortedOrder&quot;" />
+            <option value="&quot;org.patterns.ModifiedBinarySearchTest.testBinarySearchRotated&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ModifiedBinarySearchTest.testFindClosestElements (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.ModifiedBinarySearchTest.testFindClosestElements&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ModifiedBinarySearchTest.testSingleNonDuplicate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.ModifiedBinarySearchTest.testSingleNonDuplicate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -255,11 +265,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ModifiedBinarySearchTest.testBinarySearchRotated" />
+        <item itemvalue="Gradle.ModifiedBinarySearchTest.testFindClosestElements (1)" />
+        <item itemvalue="Gradle.ModifiedBinarySearchTest.testSingleNonDuplicate" />
+        <item itemvalue="Gradle.ModifiedBinarySearchTest" />
         <item itemvalue="Gradle.KTopElementTest.testReorganizeString" />
-        <item itemvalue="Gradle.KTopElementTest.testKTopFrequentElement" />
-        <item itemvalue="Gradle.KWayMergeTest.testKthSmallestElementInMatrix" />
-        <item itemvalue="Gradle.KWayMergeTest.testPrintMatrixInSortedOrder" />
-        <item itemvalue="Gradle.HeapTest.testLongestDiverseString" />
       </list>
     </recent_temporary>
   </component>
