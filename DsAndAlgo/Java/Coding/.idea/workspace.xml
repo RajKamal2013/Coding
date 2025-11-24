@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (LeastInterval)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/ModifiedBinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/ModifiedBinarySearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/Subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/patterns/SubsetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/patterns/SubsetsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +114,9 @@
     &quot;Gradle.PrintTreeTest.testPrintTreeWithNullRoot.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.PrintTreeTest.testPrintTreeWithSingleNode.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SlidingWindowTest.testFindRepeatedDnaSequence.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubsetsTest.testBracketCount.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubsetsTest.testLetterCombinations.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SubsetsTest.testPermuteWord.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
@@ -142,55 +145,7 @@
       <recent name="org.patterns.twoPointer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ModifiedBinarySearchTest.testBinarySearchRotated">
-    <configuration name="KTopElementTest.testReorganizeString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.KTopElementTest.testReorganizeString&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="ModifiedBinarySearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;org.patterns.ModifiedBinarySearchTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.SubsetsTest.testLetterCombinations">
     <configuration name="ModifiedBinarySearchTest.testBinarySearchRotated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -239,7 +194,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ModifiedBinarySearchTest.testSingleNonDuplicate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SubsetsTest.testBracketCount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -252,7 +207,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.patterns.ModifiedBinarySearchTest.testSingleNonDuplicate&quot;" />
+            <option value="&quot;org.patterns.SubsetsTest.testBracketCount&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SubsetsTest.testLetterCombinations" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.SubsetsTest.testLetterCombinations&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SubsetsTest.testPermuteWord" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;org.patterns.SubsetsTest.testPermuteWord&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -265,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SubsetsTest.testLetterCombinations" />
+        <item itemvalue="Gradle.SubsetsTest.testBracketCount" />
+        <item itemvalue="Gradle.SubsetsTest.testPermuteWord" />
         <item itemvalue="Gradle.ModifiedBinarySearchTest.testBinarySearchRotated" />
         <item itemvalue="Gradle.ModifiedBinarySearchTest.testFindClosestElements (1)" />
-        <item itemvalue="Gradle.ModifiedBinarySearchTest.testSingleNonDuplicate" />
-        <item itemvalue="Gradle.ModifiedBinarySearchTest" />
-        <item itemvalue="Gradle.KTopElementTest.testReorganizeString" />
       </list>
     </recent_temporary>
   </component>
