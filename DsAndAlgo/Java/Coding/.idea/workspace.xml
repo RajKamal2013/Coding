@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bc5f11d-c010-4aaf-8b74-95e74ebeaf65" name="Changes" comment="Added code to practice (LeastInterval)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/patterns/GreedyAlgorithm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/GreedyAlgorithmTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/patterns/Input.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/patterns/GreedyAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/patterns/GreedyAlgorithm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +132,7 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/raj-kamal/Documents/git/Coding/Java/Coding",
     "onboarding.tips.debug.path": "/Users/rakamal/Documents/Personal/Coding/DsAndAlgo/Java/Coding/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
