@@ -20,6 +20,12 @@ application {
     mainClassName = project.findProperty("chooseMain").toString()
 }
 */
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
 
 application {
     mainClassName = project.findProperty("chooseMain").toString()
