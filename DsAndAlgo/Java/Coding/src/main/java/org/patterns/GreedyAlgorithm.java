@@ -63,29 +63,29 @@ public class GreedyAlgorithm {
     }
 
     public static int gasStationJourney(int[] gas, int[] cost) {
+        if (gas == null || cost == null || gas.length == 0 || cost.length == 0) {
+            return -1;
+        }
 
-        if (gas == null || cost == null || gas.length == 0 || cost.length == 0) { return  -1;}
+        if (gas.length != cost.length) {
+            return -1;
+        }
 
-        if (gas.length != cost.length) { return -1; }
-        int gasAvailable = Arrays.stream(gas).sum();
-        int gasConsumed = Arrays.stream(cost).sum();
-
-        if (gasConsumed > gasAvailable) { return -1; }
-        int maxGasAvailableAfterConsumption = 0;
-        int startIdx = -1;
-        int gasSurplus = 0;
+        int startIdx = 0;
+        int surplus = 0;
+        int tank = 0;
         for (int i = 0; i < gas.length; i++) {
-            int gasAvailableAfterConsumption = gas[i] - cost[i];
-            gasSurplus = gasSurplus + gasAvailableAfterConsumption;
-            if (gasAvailableAfterConsumption < 0) {
-                continue;
-            }
-            if (maxGasAvailableAfterConsumption <= gasSurplus) {
-                startIdx = i;
-                maxGasAvailableAfterConsumption = gasSurplus;
+            surplus = surplus + gas[i] - cost[i];
+            tank = tank + gas[i] - cost[i];
+            if (tank < 0) {
+                startIdx = i + 1;
+                tank = 0;
             }
         }
-       return startIdx;
+
+        if (surplus < 0) { return -1; }
+        return startIdx;
     }
+
 }
 
