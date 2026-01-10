@@ -1,4 +1,4 @@
-package org.patterns.twoPointer;
+package org.patterns;
 
 
 // Definiton of a binary tree node class
