@@ -27,9 +27,18 @@ java {
 }
 
 
+/*
 application {
     mainClassName = project.findProperty("chooseMain").toString()
 }
+*/
+
+application {
+    mainClass = project.providers
+            .gradleProperty("chooseMain")
+            .orElse("org.example.Main")
+}
+
 
 
 test {
