@@ -20,10 +20,25 @@ application {
     mainClassName = project.findProperty("chooseMain").toString()
 }
 */
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
 
+
+/*
 application {
     mainClassName = project.findProperty("chooseMain").toString()
 }
+*/
+
+application {
+    mainClass = project.providers
+            .gradleProperty("chooseMain")
+            .orElse("org.example.Main")
+}
+
 
 
 test {
