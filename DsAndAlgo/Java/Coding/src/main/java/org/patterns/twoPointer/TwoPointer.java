@@ -7,7 +7,7 @@ package org.patterns.twoPointer;
  */
 
 
-public class SortNumbers {
+public class TwoPointer {
 
     public static int[] sortColors (int[] colors) {
 
